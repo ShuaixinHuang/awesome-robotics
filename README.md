@@ -10,9 +10,9 @@
 
 机器人 / 具身智能 / 嵌入式系统 / 人工智能
 
-以中文社区及华人团队项目为主的资源清单，连接代码、硬件、模型与学习资料。
+连接代码、硬件、模型与学习资料。
 
-**136 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**152 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [📝 更新记录](CHANGELOG.md) &nbsp; · &nbsp; [🤝 参与贡献](CONTRIBUTING.md)
 
@@ -28,7 +28,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 80 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 96 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -79,6 +79,9 @@
 | **MiMo-Embodied跨具身大模型** | 小米 (Xiaomi MiMo) | [GitHub](https://github.com/XiaomiMiMo/MiMo-Embodied) | 小米开源的首个跨具身基础模型，统一自动驾驶与具身智能两大领域，在29项具身与驾驶基准上取得领先性能。 |
 | **RynnVLA-001** | 阿里巴巴达摩院 | [GitHub](https://github.com/alibaba-damo-academy/RynnVLA-001) | 基于视频生成模型预训练的VLA模型，利用人类第一视角视频演示提升机械臂操作能力，已开源训练代码与预训练权重。ICRA 2026。 |
 | **InternVLA-A 系列** | 上海人工智能实验室（InternRobotics） | [GitHub](https://github.com/InternRobotics/InternVLA-A-series) | 统一视觉语言理解、未来预测与动作生成；当前主分支介绍 A1.5，A1 代码位于 InternVLA-A1 分支。仓库注明非商业许可，发布状态见 README。 |
+| **LeRobot** | Hugging Face | [GitHub](https://github.com/huggingface/lerobot) | 基于 PyTorch 的机器人学习工具库，提供统一硬件接口、数据采集、策略训练与评估，覆盖模仿学习和 VLA 等方法。 |
+| **OpenVLA** | OpenVLA 团队 | [GitHub](https://github.com/openvla/openvla) | 面向机器人操作的视觉-语言-动作模型，提供模型权重入口、推理与微调代码；基础模型及数据的许可需分别查看。 |
+| **OpenPI** | Physical Intelligence | [GitHub](https://github.com/Physical-Intelligence/openpi) | π₀、π₀-FAST 与 π₀.₅ 等机器人模型的代码和检查点入口，包含推理及自有数据微调示例；实际适配效果依赖机器人与任务。 |
 
 ### 1.2 人形与足式机器人
 
@@ -91,12 +94,13 @@
 | **Booster Gym** | 加速进化（Booster Robotics） | [GitHub](https://github.com/BoosterRobotics/booster_gym) | 面向人形机器人运动控制的强化学习训练框架，提供训练和部署说明。 |
 | **Unitree Qmini开源双足机器人** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/Qmini) | 开源双足平台，提供全套BOM/装配指南、RoboTamer4Qmini控制框架与URDF模型。 |
 | **萝博头 Roboto Origin** | 萝卜派对 (RoboParty) | [GitHub](https://github.com/Roboparty/roboto_origin) | 全栈开源的双足人形机器人，开放全部结构图纸、电子、训练与ROS2部署代码，零件可全部通过淘宝采购复刻。 |
-| **OpenCat** | Petoi | [GitHub](https://github.com/PetoiCamp/OpenCat) | 开源四足机器人平台 |
+| **OpenCat** | Petoi | [GitHub](https://github.com/PetoiCamp/OpenCat-Quadruped-Robot) | 开源四足机器人平台 |
 | **小米CyberDog开源四足机器人** | 小米科技 | [GitHub](https://github.com/MiRoboticsLab/cyberdog_ros2) | 小米CyberDog四足机器人的开源软件和硬件资料。 |
 | **unitree_rl_gym** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/unitree_rl_gym) | 宇树科技四足/人形机器人强化学习训练框架，基于Isaac Gym。 |
 | **unitree_rl_lab** | 宇树科技 (Unitree) | [IsaacLab](https://github.com/unitreerobotics/unitree_rl_lab) \| [MuJoCo](https://github.com/unitreerobotics/unitree_rl_mjlab) | 宇树科技机器人强化学习实现，分别基于Isaac Lab和MuJoCo。 |
 | **Humanoid-Gym** | 多校联合 (RoboterAX等) | [GitHub](https://github.com/roboterax/humanoid-gym) | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
 | **Dreamwaq轮足机器人强化学习库** | yusongmin1 (哈尔滨工程大学) | [GitHub](https://github.com/yusongmin1/Dreamwaq) | 面向轮足机器人的强化学习框架，复现DreamWaQ系列的CVAE隐式地形估计算法并支持视觉-本体感知融合，基于Isaac Gym训练、MuJoCo Sim2Sim验证，已在山猫M20轮足机器人实机部署，另含Go2倒立/后腿站立任务。（原始方法见KAIST的[DreamWaQ](https://arxiv.org/abs/2301.10602)，ICRA 2023；其改进版[DreamWaQ++](https://dreamwaqpp.github.io/)发表于T-RO 2026，暂未开源。） |
+| **Microduck** | Pollen Robotics | [GitHub](https://github.com/pollen-robotics/microduck) | 小型双足机器鸭的软件仓库，包含运动控制、感知与系统服务；强化学习训练代码通过 README 中的 microduck_rl 入口提供。 |
 
 ### 1.3 机械臂、抓取与操作
 
@@ -109,6 +113,10 @@
 | **RoboTwin双臂操作基准** | 港大/上海AI Lab/松灵 (陈天行等) | [GitHub](https://github.com/RoboTwin-Platform/RoboTwin) | 面向双臂协作操作的可扩展数据生成器与基准平台，内置强域随机化与50+任务，支持多种主流策略基线评测。CVPR 2025 Highlight。 |
 | **MPlib** | haosulab | [GitHub](https://github.com/haosulab/MPlib) | 轻量级机械臂运动规划库，支持运动规划与碰撞检测，可结合 SAPIEN 使用。 |
 | **PiPER ROS** | 松灵机器人（AgileX Robotics） | [GitHub](https://github.com/agilexrobotics/piper_ros) | PiPER 机械臂 ROS 工作空间，提供机械臂控制、模型与相关示例。 |
+| **SO-ARM100 / SO-ARM101** | The Robot Studio | [GitHub](https://github.com/TheRobotStudio/SO-ARM100) | 开源机械臂硬件项目，提供结构文件、物料清单和装配资料，可配合 LeRobot 进行遥操作、数据采集与模仿学习。 |
+| **ACT** | Tony Z. Zhao 等 | [GitHub](https://github.com/tonyzhaozh/act) | Action Chunking with Transformers 的官方实现，包含双臂操作仿真任务、训练与评估代码；真机使用需配合 ALOHA。 |
+| **Diffusion Policy** | Cheng Chi 等 / Stanford REAL | [GitHub](https://github.com/real-stanford/diffusion_policy) | 通过动作扩散学习视觉运动策略的官方实现，提供机器人操作策略训练与评估代码，适合作为模仿学习研究基线。 |
+| **MoveIt 2** | MoveIt 社区 | [GitHub](https://github.com/moveit/moveit2) | ROS 2 机器人操作框架，整合运动规划、运动学、碰撞检测与执行接口，用于机械臂应用开发。 |
 
 ### 1.4 无人机与空中机器人
 
@@ -146,6 +154,7 @@
 | **宇树科技4D LiDAR SLAM** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/point_lio_unilidar) | 基于Point-LIO算法适配宇树L1 4D LiDAR的SLAM方案，仅使用点云与内置IMU。 |
 | **Point-LIO** | 香港大学 MARS 实验室 | [GitHub](https://github.com/hku-mars/Point-LIO) | 高带宽激光惯性里程计，面向快速运动下的状态估计与建图。 |
 | **InternNav** | 上海人工智能实验室（InternRobotics） | [GitHub](https://github.com/InternRobotics/InternNav) | 具身导航工具箱，基于 PyTorch、Habitat 与 Isaac Sim，提供视觉语言导航模型、训练和评测入口。 |
+| **Nav2** | ROS Navigation 社区 | [GitHub](https://github.com/ros-navigation/navigation2) | ROS 2 移动机器人导航框架，提供路径规划、控制、代价地图和行为树等组件，可与定位及建图系统集成。 |
 
 ### 1.7 仿真、数据集与遥操作
 
@@ -159,6 +168,11 @@
 | **Open-TeleVision** | 多校联合 | [GitHub](https://github.com/OpenTeleVision/TeleVision) | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
 | **宇树科技XR遥操作** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/xr_teleoperate) | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
 | **OpenWBT人形全身遥操作** | 银河通用 & 清华大学 | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
+| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 面向多关节系统与接触动力学的物理仿真器，提供 C/C++ 和 Python 使用接口，适用于机器人控制及学习实验。 |
+| **MuJoCo Menagerie** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco_menagerie) | 面向 MuJoCo 的机器人模型集合，提供多种机器人 MJCF 模型与资源；各模型的来源及许可见相应目录。 |
+| **Isaac Lab** | NVIDIA / Isaac Sim 社区 | [GitHub](https://github.com/isaac-sim/IsaacLab) | 基于 NVIDIA Isaac Sim 的机器人学习框架，支持强化学习、模仿学习与并行仿真；安装需满足其硬件及平台要求。 |
+| **Webots** | Cyberbotics | [GitHub](https://github.com/cyberbotics/webots) | 通用机器人仿真软件，包含机器人、传感器与场景示例，适合教学、算法验证和无硬件原型开发。 |
+| **LIBERO** | Bo Liu、Yifeng Zhu 等 | [GitHub](https://github.com/Lifelong-Robot-Learning/LIBERO) | 面向多任务与终身机器人学习的操作基准，提供任务套件、遥操作演示数据入口和训练评估代码。 |
 
 ### 1.8 SDK、工具、DIY创客与资源
 
@@ -179,6 +193,8 @@
 | **RoboWiki (云飞机器人中文百科)** | 云飞机器人实验室 | [GitHub](https://github.com/yfrobotics/robowiki) | 机器人领域的维基百科（公共知识编辑）。 |
 | **Awesome-Robotics-Foundation-Models** | robotics-survey | [GitHub](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) | 机器人基础模型研究论文和项目汇总，包括RT-1、RT-2、OpenVLA等。 |
 | **awesome-3dcv-papers-daily** | 3D视觉工坊 | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
+| **Reachy Mini SDK** | Pollen Robotics | [GitHub](https://github.com/pollen-robotics/reachy_mini) | 桌面交互机器人的 SDK，提供动作、摄像头、音频与 AI 应用开发入口，并支持 MuJoCo 仿真；该链接主要收录软件。 |
+| **PythonRobotics** | Atsushi Sakai 等 | [GitHub](https://github.com/AtsushiSakai/PythonRobotics) | 以 Python 示例和配套讲解展示定位、路径规划及控制等机器人算法，适合学习原理和运行可视化实验。 |
 
 [↑ 返回顶部](#top)
 
