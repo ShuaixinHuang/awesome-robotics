@@ -282,11 +282,10 @@
 
 <a id="credits"></a>
 
-## 🤝 来源与致谢
+## 🤝 推荐与收录
 
-本清单基于原有机器人、嵌入式系统与人工智能项目列表整理，保留原始贡献者署名与来源：[云飞机器人实验室](https://yfrobotics.github.io/)、[原始项目](https://github.com/yfrobotics/awesome-robotics-ee-opensource)。原始仓库名称仅作为来源保留，不代表本项目当前的仓库地址。
+如果你发现了适合本清单的机器人、具身智能、嵌入式系统或 AI 项目，欢迎通过 [Issue](https://github.com/ShuaixinHuang/awesome-robotics/issues) 推荐，或提交 Pull Request 将项目加入清单，一起完善这份资源合集。
 
-欢迎按照 [贡献指南](CONTRIBUTING.md) 推荐项目、修正介绍或报告失效链接。
 
 <div align="center">
 
