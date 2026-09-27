@@ -12,15 +12,29 @@
 
 连接代码、硬件、模型与学习资料。
 
-**152 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**155 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
-[🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [📝 更新记录](CHANGELOG.md) &nbsp; · &nbsp; [🤝 参与贡献](CONTRIBUTING.md)
+[🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
-<sub>本轮内容更新：2026-09-11 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
+<sub>本轮内容更新：2026-09-27 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
 
 </div>
 
 ---
+
+<a id="weekly"></a>
+
+## 🆕 本周精选 · 2026-09-21—09-27
+
+本轮新增 **2 个本周宣布开源的项目**，另收录 **1 个本周发布新版本的项目**。根据官方发布说明确认日期；仅发布论文、代码尚未开放的项目暂不收录。
+
+| 项目 | 本周事件 | 可以尝试什么 | 官方日期来源 |
+| :--- | :--- | :--- | :--- |
+| [Intrinsic Core](https://github.com/intrinsic-ai/intrinsic-core) | 9 月 22 日宣布开源 | 组合运动规划、抓取和感知模块，搭建机械臂数字孪生工作站。 | [官方公告](https://www.intrinsic.ai/blog/posts/introducing-intrinsic-core) |
+| [Intrinsic OMTS](https://github.com/intrinsic-ai/intrinsic-omts) | 9 月 22 日随 Core 宣布开放 | 改造机床上下料示例，调整工作站布局、行为树和夹爪控制。 | [官方公告](https://www.intrinsic.ai/blog/posts/introducing-intrinsic-core) |
+| [Isaac ROS 5.0](https://nvidia-isaac-ros.github.io/) | 9 月 21 日发布新版本 | 尝试 GPU 加速感知与机器人开发助手；需要匹配 NVIDIA 硬件和软件环境。 | [版本说明](https://nvidia-isaac-ros.github.io/releases/index.html#isaac-ros-5-0-0-september-21-2026) |
+
+以上项目已查看官方代码与说明，尚未本地安装或复现。详细用途和许可说明见下方对应分类。
 
 <a id="navigation"></a>
 
@@ -28,7 +42,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 96 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 99 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -117,6 +131,7 @@
 | **ACT** | Tony Z. Zhao 等 | [GitHub](https://github.com/tonyzhaozh/act) | Action Chunking with Transformers 的官方实现，包含双臂操作仿真任务、训练与评估代码；真机使用需配合 ALOHA。 |
 | **Diffusion Policy** | Cheng Chi 等 / Stanford REAL | [GitHub](https://github.com/real-stanford/diffusion_policy) | 通过动作扩散学习视觉运动策略的官方实现，提供机器人操作策略训练与评估代码，适合作为模仿学习研究基线。 |
 | **MoveIt 2** | MoveIt 社区 | [GitHub](https://github.com/moveit/moveit2) | ROS 2 机器人操作框架，整合运动规划、运动学、碰撞检测与执行接口，用于机械臂应用开发。 |
+| **Intrinsic OMTS** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-omts) | 2026-09-22 宣布开源的机床上下料参考应用，集成行为树、抓取、物体位姿估计与数字孪生；可以修改工作站布局和任务流程。代码为 Apache-2.0，FoundationPose 权重另受 NVIDIA 模型许可约束。 |
 
 ### 1.4 无人机与空中机器人
 
@@ -173,6 +188,7 @@
 | **Isaac Lab** | NVIDIA / Isaac Sim 社区 | [GitHub](https://github.com/isaac-sim/IsaacLab) | 基于 NVIDIA Isaac Sim 的机器人学习框架，支持强化学习、模仿学习与并行仿真；安装需满足其硬件及平台要求。 |
 | **Webots** | Cyberbotics | [GitHub](https://github.com/cyberbotics/webots) | 通用机器人仿真软件，包含机器人、传感器与场景示例，适合教学、算法验证和无硬件原型开发。 |
 | **LIBERO** | Bo Liu、Yifeng Zhu 等 | [GitHub](https://github.com/Lifelong-Robot-Learning/LIBERO) | 面向多任务与终身机器人学习的操作基准，提供任务套件、遥操作演示数据入口和训练评估代码。 |
+| **Isaac ROS** | NVIDIA | [文档](https://nvidia-isaac-ros.github.io/) \| [GitHub](https://github.com/NVIDIA-ISAAC-ROS) | GPU 加速的 ROS 2 机器人软件包生态，可尝试视觉 SLAM、三维重建、感知与遥操作。5.0 于 2026-09-21 发布，新增 AI 编程助手技能并迁移至 ROS 2 Lyrical；属于已有项目的新版本。 |
 
 ### 1.8 SDK、工具、DIY创客与资源
 
@@ -195,6 +211,7 @@
 | **awesome-3dcv-papers-daily** | 3D视觉工坊 | [GitHub](https://github.com/qxiaofan/awesome-3dcv-papers-daily) | 主要记录计算机视觉、VSLAM、点云、结构光、机械臂抓取、三维重建、深度学习、自动驾驶等前沿paper与文章。 |
 | **Reachy Mini SDK** | Pollen Robotics | [GitHub](https://github.com/pollen-robotics/reachy_mini) | 桌面交互机器人的 SDK，提供动作、摄像头、音频与 AI 应用开发入口，并支持 MuJoCo 仿真；该链接主要收录软件。 |
 | **PythonRobotics** | Atsushi Sakai 等 | [GitHub](https://github.com/AtsushiSakai/PythonRobotics) | 以 Python 示例和配套讲解展示定位、路径规划及控制等机器人算法，适合学习原理和运行可视化实验。 |
+| **Intrinsic Core** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-core) | 2026-09-22 宣布开源的机器人本地运行时与 SDK，包含实时控制、运动规划、抓取、感知与 Gazebo 仿真服务，可用于搭建机械臂工作站。代码采用 Apache-2.0；模型及第三方组件许可分别查看。 |
 
 [↑ 返回顶部](#top)
 
@@ -292,7 +309,7 @@
 <details>
 <summary><strong>📌 收录与使用说明</strong></summary>
 
-收录不等于代码、权重、数据和硬件均采用同一开源许可。使用前请查看对应仓库的 LICENSE、模型卡和授权说明。历史条目尚未逐项重新核实，本轮核查范围见 [更新记录](CHANGELOG.md)。
+收录不等于代码、权重、数据和硬件均采用同一开源许可。使用前请查看对应仓库的 LICENSE、模型卡和授权说明。历史条目尚未逐项重新核实，本轮核查范围见 [本周精选](#weekly)。
 
 </details>
 
@@ -307,6 +324,6 @@
 
 **发现好项目，一起完善这份清单。**
 
-[参与贡献](CONTRIBUTING.md) · [更新记录](CHANGELOG.md) · [返回顶部 ↑](#top)
+[参与贡献](#credits) · [本周精选](#weekly) · [返回顶部 ↑](#top)
 
 </div>
