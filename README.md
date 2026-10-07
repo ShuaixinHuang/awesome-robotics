@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**155 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**156 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
@@ -42,7 +42,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 99 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 100 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -128,6 +128,7 @@
 | **MPlib** | haosulab | [GitHub](https://github.com/haosulab/MPlib) | 轻量级机械臂运动规划库，支持运动规划与碰撞检测，可结合 SAPIEN 使用。 |
 | **PiPER ROS** | 松灵机器人（AgileX Robotics） | [GitHub](https://github.com/agilexrobotics/piper_ros) | PiPER 机械臂 ROS 工作空间，提供机械臂控制、模型与相关示例。 |
 | **SO-ARM100 / SO-ARM101** | The Robot Studio | [GitHub](https://github.com/TheRobotStudio/SO-ARM100) | 开源机械臂硬件项目，提供结构文件、物料清单和装配资料，可配合 LeRobot 进行遥操作、数据采集与模仿学习。 |
+| **SO-ARM 102** | Robonine | [GitHub](https://github.com/roboninecom/SO-ARM-102) | 可 3D 打印的主从机械臂，具有五个机械臂自由度和一个独立平行夹爪控制坐标；公开 STEP、STL/3MF、物料清单、装配说明和 URDF/Xacro，采用 LeRobot SO-101 工作流程。[硬件预览视频](https://github.com/roboninecom/SO-ARM-102/blob/a62866a6d65efa4be7fd421e318ce8e649ac806a/assets/video/so-arm-102-preview.mp4)。 |
 | **ACT** | Tony Z. Zhao 等 | [GitHub](https://github.com/tonyzhaozh/act) | Action Chunking with Transformers 的官方实现，包含双臂操作仿真任务、训练与评估代码；真机使用需配合 ALOHA。 |
 | **Diffusion Policy** | Cheng Chi 等 / Stanford REAL | [GitHub](https://github.com/real-stanford/diffusion_policy) | 通过动作扩散学习视觉运动策略的官方实现，提供机器人操作策略训练与评估代码，适合作为模仿学习研究基线。 |
 | **MoveIt 2** | MoveIt 社区 | [GitHub](https://github.com/moveit/moveit2) | ROS 2 机器人操作框架，整合运动规划、运动学、碰撞检测与执行接口，用于机械臂应用开发。 |
