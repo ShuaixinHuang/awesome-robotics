@@ -12,11 +12,11 @@
 
 连接代码、硬件、模型与学习资料。
 
-**156 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**159 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
-<sub>本轮内容更新：2026-09-27 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
+<sub>本轮内容更新：2026-10-08 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
 
 </div>
 
@@ -24,7 +24,23 @@
 
 <a id="weekly"></a>
 
-## 🆕 本周精选 · 2026-09-21—09-27
+## 🆕 本周精选 · 2026-10-05—10-08
+
+本周截至 10 月 8 日，新增 **3 个资源条目**，并更新已收录的 **MuJoCo** 版本动态。日期依据作者公告或官方 Release，区分开源公告、开发者预览与已有项目的新版本，不将公告日期等同于仓库首次创建日期。
+
+| 项目 | 本周事件 | 可以尝试什么 | 日期来源 |
+| :--- | :--- | :--- | :--- |
+| [DialoStack](https://github.com/aquintan4/DialoStack) | 10 月 6 日作者宣布开源（MIT） | 用麦克风和扬声器做语音点单、讲解或问答游戏，支持 Ollama；机器人动作层目前支持 NAO。 | [作者 / 官方公告](https://discourse.openrobotics.org/t/dialostack-task-oriented-spoken-dialogue-for-ros-2-with-the-llm-kept-out-of-the-control-flow/58631) |
+| [hold_and_weld](https://github.com/silanus23/hold_and_weld) | 10 月 6 日发布 v0.3.0 公告 | 在 RViz2 中配置双臂工作站，一只机械臂夹持，另一只沿 CAD 提取的焊缝运动；目前为仿真概念验证。 | [作者 / 官方公告](https://discourse.openrobotics.org/t/hold-and-weld-v0-3-0-configurable-dual-arm-welding-grasping-framework/58628) |
+| [ROS 2 Task Resilience](https://github.com/dlanov/ros2-task-resilience) | 10 月 5 日公布开源开发者预览 | 运行无需硬件的 Nav2 两步任务，模拟监督进程退出后恢复任务；早期实验项目，Apache-2.0。 | [作者 / 官方公告](https://discourse.openrobotics.org/t/ros-2-task-resilience-experimental-mission-persistence-and-restart-recovery-with-nav2/58583) |
+| [MuJoCo 3.15.0](https://github.com/google-deepmind/mujoco) | 10 月 5 日发布新版本 | 用已有机器人模型做接触动力学实验；此版本修复 Windows 资源归档路径，并更新阻尼与柔性体计算。 | [作者 / 官方公告](https://github.com/google-deepmind/mujoco/releases/tag/3.15.0) |
+
+以上项目已查看公开代码与官方说明，尚未本地安装或复现。
+
+<details>
+<summary>查看上一期精选</summary>
+
+### 2026-09-21—09-27 历史精选
 
 本轮新增 **2 个本周宣布开源的项目**，另收录 **1 个本周发布新版本的项目**。根据官方发布说明确认日期；仅发布论文、代码尚未开放的项目暂不收录。
 
@@ -36,13 +52,16 @@
 
 以上项目已查看官方代码与说明，尚未本地安装或复现。详细用途和许可说明见下方对应分类。
 
+
+</details>
+
 <a id="navigation"></a>
 
 ## 🧭 资源导航
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 100 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 103 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -133,6 +152,7 @@
 | **Diffusion Policy** | Cheng Chi 等 / Stanford REAL | [GitHub](https://github.com/real-stanford/diffusion_policy) | 通过动作扩散学习视觉运动策略的官方实现，提供机器人操作策略训练与评估代码，适合作为模仿学习研究基线。 |
 | **MoveIt 2** | MoveIt 社区 | [GitHub](https://github.com/moveit/moveit2) | ROS 2 机器人操作框架，整合运动规划、运动学、碰撞检测与执行接口，用于机械臂应用开发。 |
 | **Intrinsic OMTS** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-omts) | 2026-09-22 宣布开源的机床上下料参考应用，集成行为树、抓取、物体位姿估计与数字孪生；可以修改工作站布局和任务流程。代码为 Apache-2.0，FoundationPose 权重另受 NVIDIA 模型许可约束。 |
+| **hold_and_weld** | Berkan Tali（silanus23） | [GitHub](https://github.com/silanus23/hold_and_weld) | ROS 2 双臂夹持与焊接框架，结合 CAD 抓取采样、焊缝提取与 MoveIt 2；可在 RViz2 调整工作站布局。2026-10-06 公告 v0.3.0，目前仅完成仿真验证，面向 Ubuntu 24.04 / ROS 2 Jazzy。 |
 
 ### 1.4 无人机与空中机器人
 
@@ -184,7 +204,7 @@
 | **Open-TeleVision** | 多校联合 | [GitHub](https://github.com/OpenTeleVision/TeleVision) | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
 | **宇树科技XR遥操作** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/xr_teleoperate) | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
 | **OpenWBT人形全身遥操作** | 银河通用 & 清华大学 | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
-| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 面向多关节系统与接触动力学的物理仿真器，提供 C/C++ 和 Python 使用接口，适用于机器人控制及学习实验。 |
+| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 面向多关节系统与接触动力学的物理仿真器，提供 C/C++ 和 Python 使用接口，适用于机器人控制及学习实验。2026-10-05 发布 [3.15.0](https://github.com/google-deepmind/mujoco/releases/tag/3.15.0)，涉及阻尼与柔性体计算更新及 API 变更，升级前查看 Release Notes。 |
 | **MuJoCo Menagerie** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco_menagerie) | 面向 MuJoCo 的机器人模型集合，提供多种机器人 MJCF 模型与资源；各模型的来源及许可见相应目录。 |
 | **Isaac Lab** | NVIDIA / Isaac Sim 社区 | [GitHub](https://github.com/isaac-sim/IsaacLab) | 基于 NVIDIA Isaac Sim 的机器人学习框架，支持强化学习、模仿学习与并行仿真；安装需满足其硬件及平台要求。 |
 | **Webots** | Cyberbotics | [GitHub](https://github.com/cyberbotics/webots) | 通用机器人仿真软件，包含机器人、传感器与场景示例，适合教学、算法验证和无硬件原型开发。 |
@@ -213,6 +233,8 @@
 | **Reachy Mini SDK** | Pollen Robotics | [GitHub](https://github.com/pollen-robotics/reachy_mini) | 桌面交互机器人的 SDK，提供动作、摄像头、音频与 AI 应用开发入口，并支持 MuJoCo 仿真；该链接主要收录软件。 |
 | **PythonRobotics** | Atsushi Sakai 等 | [GitHub](https://github.com/AtsushiSakai/PythonRobotics) | 以 Python 示例和配套讲解展示定位、路径规划及控制等机器人算法，适合学习原理和运行可视化实验。 |
 | **Intrinsic Core** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-core) | 2026-09-22 宣布开源的机器人本地运行时与 SDK，包含实时控制、运动规划、抓取、感知与 Gazebo 仿真服务，可用于搭建机械臂工作站。代码采用 Apache-2.0；模型及第三方组件许可分别查看。 |
+| **DialoStack** | Álvaro Quintana（aquintan4） | [GitHub](https://github.com/aquintan4/DialoStack) | ROS 2 语音交互工具，支持点单信息收集、主题讲解与问答游戏；Python 状态机管理对话，LLM 负责理解与生成。支持 Gemini / Ollama、麦克风与扬声器，以及 NAO 动作反馈；MIT 许可。 |
+| **ROS 2 Task Resilience** | dlanov | [GitHub](https://github.com/dlanov/ros2-task-resilience) | 任务持久化与进程重启恢复的实验开发者预览，提供 SQLite 状态存储和无需硬件的 Nav2 演示。测试环境为 WSL2 / Ubuntu 24.04 / ROS 2 Jazzy；未实现取消集成或自动重试，Apache-2.0 许可。 |
 
 [↑ 返回顶部](#top)
 
