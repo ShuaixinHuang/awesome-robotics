@@ -12,11 +12,11 @@
 
 连接代码、硬件、模型与学习资料。
 
-**159 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**162 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
-<sub>本轮内容更新：2026-10-08 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
+<sub>本轮内容更新：2026-10-15 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
 
 </div>
 
@@ -24,7 +24,22 @@
 
 <a id="weekly"></a>
 
-## 🆕 本周精选 · 2026-10-05—10-08
+## 🆕 本周精选 · 2026-10-12—10-15
+
+本周截至 10 月 15 日，精选 **3 项官方动态**：MuJoCo 新版本、PlanSys2 规划器迁移公告与 DendROS 作者介绍。本轮新增 **3 个资源条目**（PlanSys2、Kairos、DendROS），并更新已收录的 MuJoCo；新增收录不等于本周首次开源。日期依据官方 Release 或作者公告，论坛最后回复日期不作为发布日期。
+
+| 项目 | 本周事件 | 可以尝试什么 | 日期来源 |
+| :--- | :--- | :--- | :--- |
+| [MuJoCo 3.16.0](https://github.com/google-deepmind/mujoco) | 10 月 14 日发布新版本 | 尝试编译时缩放模型与保留原始建模方式的 XML 保存选项；版本包含 API 变更，升级前查看迁移说明。 | [官方 Release](https://github.com/google-deepmind/mujoco/releases/tag/3.16.0) |
+| [PlanSys2](https://github.com/PlanSys2/ros2_planning_system) / [Kairos](https://github.com/PlanSys2/kairos) | 10 月 13 日公告将迁移至 Kairos 与 STN 行为树构建器 | 用 Kairos 命令行或 C++ 库尝试时序与数值 PDDL 规划；PlanSys2 集成按公告先进入 Rolling，其他发行版随后跟进。 | [作者公告](https://discourse.openrobotics.org/t/plansys2-moves-to-kairos-and-stn/58838) |
+| [DendROS](https://github.com/mlisi1/DendROS) | 10 月 12 日作者介绍开源工具（MIT） | 为 ROS 2 节点日志分组着色，在实时 launch 日志中搜索和过滤；当前 shell 集成为 Bash，作者使用 Jazzy 开发测试。 | [作者公告](https://discourse.openrobotics.org/t/dendros-colored-ros2-terminal-output-with-utils/58797) |
+
+以上已查看官方仓库、发布说明与作者公告，尚未本地安装或复现；本轮未逐项重新验证历史资源。
+
+<details>
+<summary>查看历史精选</summary>
+
+### 2026-10-05—10-08 历史精选
 
 本周截至 10 月 8 日，新增 **3 个资源条目**，并更新已收录的 **MuJoCo** 版本动态。日期依据作者公告或官方 Release，区分开源公告、开发者预览与已有项目的新版本，不将公告日期等同于仓库首次创建日期。
 
@@ -36,9 +51,6 @@
 | [MuJoCo 3.15.0](https://github.com/google-deepmind/mujoco) | 10 月 5 日发布新版本 | 用已有机器人模型做接触动力学实验；此版本修复 Windows 资源归档路径，并更新阻尼与柔性体计算。 | [作者 / 官方公告](https://github.com/google-deepmind/mujoco/releases/tag/3.15.0) |
 
 以上项目已查看公开代码与官方说明，尚未本地安装或复现。
-
-<details>
-<summary>查看上一期精选</summary>
 
 ### 2026-09-21—09-27 历史精选
 
@@ -61,7 +73,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 103 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 106 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -204,7 +216,7 @@
 | **Open-TeleVision** | 多校联合 | [GitHub](https://github.com/OpenTeleVision/TeleVision) | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
 | **宇树科技XR遥操作** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/xr_teleoperate) | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
 | **OpenWBT人形全身遥操作** | 银河通用 & 清华大学 | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
-| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 面向多关节系统与接触动力学的物理仿真器，提供 C/C++ 和 Python 使用接口，适用于机器人控制及学习实验。2026-10-05 发布 [3.15.0](https://github.com/google-deepmind/mujoco/releases/tag/3.15.0)，涉及阻尼与柔性体计算更新及 API 变更，升级前查看 Release Notes。 |
+| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 面向多关节系统与接触动力学的物理仿真器，提供 C/C++ 和 Python 使用接口。2026-10-14 发布 [3.16.0](https://github.com/google-deepmind/mujoco/releases/tag/3.16.0)，新增编译时模型缩放及保留原始建模方式的 XML 保存选项，包含 API 变更；升级前查看 Release Notes。 |
 | **MuJoCo Menagerie** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco_menagerie) | 面向 MuJoCo 的机器人模型集合，提供多种机器人 MJCF 模型与资源；各模型的来源及许可见相应目录。 |
 | **Isaac Lab** | NVIDIA / Isaac Sim 社区 | [GitHub](https://github.com/isaac-sim/IsaacLab) | 基于 NVIDIA Isaac Sim 的机器人学习框架，支持强化学习、模仿学习与并行仿真；安装需满足其硬件及平台要求。 |
 | **Webots** | Cyberbotics | [GitHub](https://github.com/cyberbotics/webots) | 通用机器人仿真软件，包含机器人、传感器与场景示例，适合教学、算法验证和无硬件原型开发。 |
@@ -235,6 +247,9 @@
 | **Intrinsic Core** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-core) | 2026-09-22 宣布开源的机器人本地运行时与 SDK，包含实时控制、运动规划、抓取、感知与 Gazebo 仿真服务，可用于搭建机械臂工作站。代码采用 Apache-2.0；模型及第三方组件许可分别查看。 |
 | **DialoStack** | Álvaro Quintana（aquintan4） | [GitHub](https://github.com/aquintan4/DialoStack) | ROS 2 语音交互工具，支持点单信息收集、主题讲解与问答游戏；Python 状态机管理对话，LLM 负责理解与生成。支持 Gemini / Ollama、麦克风与扬声器，以及 NAO 动作反馈；MIT 许可。 |
 | **ROS 2 Task Resilience** | dlanov | [GitHub](https://github.com/dlanov/ros2-task-resilience) | 任务持久化与进程重启恢复的实验开发者预览，提供 SQLite 状态存储和无需硬件的 Nav2 演示。测试环境为 WSL2 / Ubuntu 24.04 / ROS 2 Jazzy；未实现取消集成或自动重试，Apache-2.0 许可。 |
+| **PlanSys2** | PlanSys2 / Francisco Martín 等 | [GitHub](https://github.com/PlanSys2/ros2_planning_system) | ROS 2 的 PDDL 任务规划与执行框架，提供领域、问题管理和行为树执行工具。2026-10-13 公告将默认规划器和执行行为树构建器迁移至 Kairos / STN，先进入 Rolling，其他发行版随后跟进；Apache-2.0。 |
+| **Kairos** | PlanSys2 | [GitHub](https://github.com/PlanSys2/kairos) | C++20 时序与数值 PDDL 规划器，可独立作为命令行工具或 C++ 库使用，无需 ROS；提供规划、PDDL 检查与计划验证入口，PlanSys2 集成进度见官方公告；Apache-2.0。 |
+| **DendROS** | mlisi1 | [GitHub](https://github.com/mlisi1/DendROS) | ROS 2 终端日志工具，为节点组着色，支持实时 launch 日志搜索、过滤与崩溃高亮。基于 Python 3 / Bash，当前 shell 集成仅支持 Bash；作者使用 Jazzy 开发测试，MIT 许可。 |
 
 [↑ 返回顶部](#top)
 
