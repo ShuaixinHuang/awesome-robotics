@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**162 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**163 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
@@ -73,7 +73,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 106 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 107 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -250,6 +250,7 @@
 | **PlanSys2** | PlanSys2 / Francisco Martín 等 | [GitHub](https://github.com/PlanSys2/ros2_planning_system) | ROS 2 的 PDDL 任务规划与执行框架，提供领域、问题管理和行为树执行工具。2026-10-13 公告将默认规划器和执行行为树构建器迁移至 Kairos / STN，先进入 Rolling，其他发行版随后跟进；Apache-2.0。 |
 | **Kairos** | PlanSys2 | [GitHub](https://github.com/PlanSys2/kairos) | C++20 时序与数值 PDDL 规划器，可独立作为命令行工具或 C++ 库使用，无需 ROS；提供规划、PDDL 检查与计划验证入口，PlanSys2 集成进度见官方公告；Apache-2.0。 |
 | **DendROS** | mlisi1 | [GitHub](https://github.com/mlisi1/DendROS) | ROS 2 终端日志工具，为节点组着色，支持实时 launch 日志搜索、过滤与崩溃高亮。基于 Python 3 / Bash，当前 shell 集成仅支持 Bash；作者使用 Jazzy 开发测试，MIT 许可。 |
+| **Robot Skill Hub** | Superfast Robotics | [GitHub](https://github.com/Superfast-Robotics/robot-skill-hub) | Robotics source and preparation-recipe catalog for agents, with pinned commits, checksums and upstream licenses. Public lookup needs no account; the Python CLI retrieves pinned files or prepares supported recipes. Hub code is MIT; referenced artifacts keep their own licenses. |
 
 [↑ 返回顶部](#top)
 
