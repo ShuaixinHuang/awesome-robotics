@@ -12,11 +12,11 @@
 
 连接代码、硬件、模型与学习资料。
 
-**162 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**164 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
-<sub>本轮内容更新：2026-10-15 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
+<sub>本轮内容更新：2026-10-23 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
 
 </div>
 
@@ -24,7 +24,21 @@
 
 <a id="weekly"></a>
 
-## 🆕 本周精选 · 2026-10-12—10-15
+## 🆕 本周精选 · 2026-10-19—10-23
+
+截至 10 月 23 日，本轮新增 **2 个资源条目**，更新 MuJoCo、PlanSys2 的版本动态。以下日期采用官方发布说明或作者公告，不采用论坛最后回复日期；新增收录不等于首次开源。已核查公开说明，尚未安装或复现，历史资源未全量复核。
+
+| 项目 | 本周事件 | 可以尝试什么 | 日期来源 |
+| :--- | :--- | :--- | :--- |
+| [MuJoCo 3.17.0](https://github.com/google-deepmind/mujoco) | 10 月 22 日发布 | 使用新增 batch API 在线程池中运行同一模型的多组仿真。 | [官方 Release](https://github.com/google-deepmind/mujoco/releases/tag/3.17.0) |
+| [PlanSys2 4.0.0](https://github.com/PlanSys2/ros2_planning_system) | 10 月 21 日作者发布公告 | 尝试默认 Kairos 规划器与 STN 行为树执行；Humble、Jazzy、Kilted、Lyrical 二进制包按各发行版后续 sync 提供。 | [作者公告](https://discourse.openrobotics.org/t/plansys2-4-0-0-released-robust-and-covering-pddl-from-1-2-to-pddl/59031) |
+| [ros2_pulse 0.7.0](https://github.com/TanayK07/ros2_pulse) | 10 月 21 日发布 | 查看每个发布者和订阅者的计数，通过 /diagnostics 接入机器人诊断工具。 | [官方 Release](https://github.com/TanayK07/ros2_pulse/releases/tag/v0.7.0) |
+| [robot-data-diff](https://github.com/yafetashenafi790-lgtm/robot-data-diff) | 10 月 19 日作者介绍 | 比较 LeRobot 数据集两个版本的 episode、统计与 schema 变化，输出 HTML 报告。 | [作者公告](https://discourse.openrobotics.org/t/robot-data-diff-episode-aware-diffs-for-lerobot-datasets/58956) |
+
+<details>
+<summary>查看历史精选</summary>
+
+### 历史精选 · 2026-10-12—10-15
 
 本周截至 10 月 15 日，精选 **3 项官方动态**：MuJoCo 新版本、PlanSys2 规划器迁移公告与 DendROS 作者介绍。本轮新增 **3 个资源条目**（PlanSys2、Kairos、DendROS），并更新已收录的 MuJoCo；新增收录不等于本周首次开源。日期依据官方 Release 或作者公告，论坛最后回复日期不作为发布日期。
 
@@ -36,8 +50,7 @@
 
 以上已查看官方仓库、发布说明与作者公告，尚未本地安装或复现；本轮未逐项重新验证历史资源。
 
-<details>
-<summary>查看历史精选</summary>
+
 
 ### 2026-10-05—10-08 历史精选
 
@@ -73,7 +86,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 106 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 108 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -216,13 +229,15 @@
 | **Open-TeleVision** | 多校联合 | [GitHub](https://github.com/OpenTeleVision/TeleVision) | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
 | **宇树科技XR遥操作** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/xr_teleoperate) | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
 | **OpenWBT人形全身遥操作** | 银河通用 & 清华大学 | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
-| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 面向多关节系统与接触动力学的物理仿真器，提供 C/C++ 和 Python 使用接口。2026-10-14 发布 [3.16.0](https://github.com/google-deepmind/mujoco/releases/tag/3.16.0)，新增编译时模型缩放及保留原始建模方式的 XML 保存选项，包含 API 变更；升级前查看 Release Notes。 |
+| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 多关节与接触动力学仿真器，提供 C/C++、Python 接口；2026-10-22 发布 [3.17.0](https://github.com/google-deepmind/mujoco/releases/tag/3.17.0)，新增线程池 batch API，用于同一模型的多组仿真，升级前查看版本说明。 |
 | **MuJoCo Menagerie** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco_menagerie) | 面向 MuJoCo 的机器人模型集合，提供多种机器人 MJCF 模型与资源；各模型的来源及许可见相应目录。 |
 | **Isaac Lab** | NVIDIA / Isaac Sim 社区 | [GitHub](https://github.com/isaac-sim/IsaacLab) | 基于 NVIDIA Isaac Sim 的机器人学习框架，支持强化学习、模仿学习与并行仿真；安装需满足其硬件及平台要求。 |
 | **Webots** | Cyberbotics | [GitHub](https://github.com/cyberbotics/webots) | 通用机器人仿真软件，包含机器人、传感器与场景示例，适合教学、算法验证和无硬件原型开发。 |
 | **LIBERO** | Bo Liu、Yifeng Zhu 等 | [GitHub](https://github.com/Lifelong-Robot-Learning/LIBERO) | 面向多任务与终身机器人学习的操作基准，提供任务套件、遥操作演示数据入口和训练评估代码。 |
 | **Isaac ROS** | NVIDIA | [文档](https://nvidia-isaac-ros.github.io/) \| [GitHub](https://github.com/NVIDIA-ISAAC-ROS) | GPU 加速的 ROS 2 机器人软件包生态，可尝试视觉 SLAM、三维重建、感知与遥操作。5.0 于 2026-09-21 发布，新增 AI 编程助手技能并迁移至 ROS 2 Lyrical；属于已有项目的新版本。 |
 
+| **robot-data-diff** | yafetashenafi790-lgtm | [GitHub](https://github.com/yafetashenafi790-lgtm/robot-data-diff) | LeRobot 数据集版本比较 CLI，支持 v2.1 / v3.0、本地目录或 Hugging Face 仓库，报告 episode 增删改、统计及 schema 差异并生成 HTML；CPU 运行，不下载视频，Apache-2.0。 |
+| **ros2_pulse** | TanayK07 | [GitHub](https://github.com/TanayK07/ros2_pulse) | 基于 tracetools 钩子的 ROS 2 话题频率与节点监测工具；0.7.0 增加每端点计数及 /diagnostics 输出，支持接入诊断聚合器；安装版本与发行版适配见官方说明。 |
 ### 1.8 SDK、工具、DIY创客与资源
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
@@ -247,7 +262,7 @@
 | **Intrinsic Core** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-core) | 2026-09-22 宣布开源的机器人本地运行时与 SDK，包含实时控制、运动规划、抓取、感知与 Gazebo 仿真服务，可用于搭建机械臂工作站。代码采用 Apache-2.0；模型及第三方组件许可分别查看。 |
 | **DialoStack** | Álvaro Quintana（aquintan4） | [GitHub](https://github.com/aquintan4/DialoStack) | ROS 2 语音交互工具，支持点单信息收集、主题讲解与问答游戏；Python 状态机管理对话，LLM 负责理解与生成。支持 Gemini / Ollama、麦克风与扬声器，以及 NAO 动作反馈；MIT 许可。 |
 | **ROS 2 Task Resilience** | dlanov | [GitHub](https://github.com/dlanov/ros2-task-resilience) | 任务持久化与进程重启恢复的实验开发者预览，提供 SQLite 状态存储和无需硬件的 Nav2 演示。测试环境为 WSL2 / Ubuntu 24.04 / ROS 2 Jazzy；未实现取消集成或自动重试，Apache-2.0 许可。 |
-| **PlanSys2** | PlanSys2 / Francisco Martín 等 | [GitHub](https://github.com/PlanSys2/ros2_planning_system) | ROS 2 的 PDDL 任务规划与执行框架，提供领域、问题管理和行为树执行工具。2026-10-13 公告将默认规划器和执行行为树构建器迁移至 Kairos / STN，先进入 Rolling，其他发行版随后跟进；Apache-2.0。 |
+| **PlanSys2** | PlanSys2 / Francisco Martín 等 | [GitHub](https://github.com/PlanSys2/ros2_planning_system) | ROS 2 PDDL 任务规划与执行框架；2026-10-21 公告发布 4.0.0，默认采用 Kairos 规划器与 STN 行为树构建器。Humble、Jazzy、Kilted、Lyrical 二进制包随后续 sync 提供；Apache-2.0。 |
 | **Kairos** | PlanSys2 | [GitHub](https://github.com/PlanSys2/kairos) | C++20 时序与数值 PDDL 规划器，可独立作为命令行工具或 C++ 库使用，无需 ROS；提供规划、PDDL 检查与计划验证入口，PlanSys2 集成进度见官方公告；Apache-2.0。 |
 | **DendROS** | mlisi1 | [GitHub](https://github.com/mlisi1/DendROS) | ROS 2 终端日志工具，为节点组着色，支持实时 launch 日志搜索、过滤与崩溃高亮。基于 Python 3 / Bash，当前 shell 集成仅支持 Bash；作者使用 Jazzy 开发测试，MIT 许可。 |
 
