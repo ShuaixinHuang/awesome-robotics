@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**164 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**165 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
@@ -86,7 +86,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 108 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 109 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -238,6 +238,8 @@
 
 | **robot-data-diff** | yafetashenafi790-lgtm | [GitHub](https://github.com/yafetashenafi790-lgtm/robot-data-diff) | LeRobot 数据集版本比较 CLI，支持 v2.1 / v3.0、本地目录或 Hugging Face 仓库，报告 episode 增删改、统计及 schema 差异并生成 HTML；CPU 运行，不下载视频，Apache-2.0。 |
 | **ros2_pulse** | TanayK07 | [GitHub](https://github.com/TanayK07/ros2_pulse) | 基于 tracetools 钩子的 ROS 2 话题频率与节点监测工具；0.7.0 增加每端点计数及 /diagnostics 输出，支持接入诊断聚合器；安装版本与发行版适配见官方说明。 |
+| **R4R（Renormalization for Robotics）** | Youran Sun、Jiaxuan Guo、Xingyu Ren、Chugang Yi、Haizhao Yang | [GitHub](https://github.com/WhymustIhaveaname/R4R) | 将物理学中的重整化思想引入 sim-to-real：模拟器参数不该照抄真机数值，而应取依赖仿真频率和分辨率的“有效值”，才能让仿真与真机最接近。论文闭式推导了有限仿真频率下 PD 控制的有效阻尼与惯量修正，覆盖刚体 PD 控制、绳索和水下游动，并给出 4 步实操流程。[论文](https://arxiv.org/abs/2607.24079)。 |
+
 ### 1.8 SDK、工具、DIY创客与资源
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
