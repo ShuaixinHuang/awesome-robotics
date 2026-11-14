@@ -12,11 +12,11 @@
 
 连接代码、硬件、模型与学习资料。
 
-**164 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**165 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
 
-<sub>本轮内容更新：2026-10-23 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
+<sub>本轮内容更新：2026-11-14 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
 
 </div>
 
@@ -24,7 +24,23 @@
 
 <a id="weekly"></a>
 
-## 🆕 本周精选 · 2026-10-19—10-23
+## 🆕 本期精选 · 2026-11-14
+
+本期新增 **LeLab**，更新已收录的 **MuJoCo、LeRobot、OpenPI**。11 月 14 日是本期核查日期；新增收录不等于项目首次开源。
+
+| 项目 | 本期更新 | 可以尝试什么 | 官方来源 |
+| :--- | :--- | :--- | :--- |
+| [MuJoCo 4.0.1](https://github.com/google-deepmind/mujoco) | 11 月 11 日发布 | 修复 4.0.0 稀疏 Cholesky 分解可能导致错误加速度、收敛慢或发散的问题；Windows 可使用 Studio Web Viewer。 | [版本说明](https://github.com/google-deepmind/mujoco/releases/tag/4.0.1) |
+| [LeLab](https://github.com/huggingface/leLab) | 本期新增官方图形界面 | 在浏览器中完成 LeRobot 机械臂校准、遥操作、数据采集、训练和回放。 | [官方 README](https://github.com/huggingface/leLab#readme) |
+| [LeRobot](https://github.com/huggingface/lerobot) | 更新使用入口 | 按数据集、训练、硬件采集选择安装 extras，再连接数据采集与策略训练流程。 | [官方入门](https://huggingface.co/docs/lerobot/installation) |
+| [OpenPI](https://github.com/Physical-Intelligence/openpi) | 补充实践路线 | 使用 π₀、π₀-FAST、π₀.₅ 检查点尝试推理，再按自有数据适配微调。 | [官方 README](https://github.com/Physical-Intelligence/openpi#readme) |
+
+新增 [实践路线](docs/learning-paths.md)，按“先仿真、再采集、再训练”选择入口。以上依据官方仓库与发布说明核查，未进行模型训练或真机部署。
+
+<details>
+<summary>查看历史精选</summary>
+
+### 历史精选 · 2026-10-19—10-23
 
 截至 10 月 23 日，本轮新增 **2 个资源条目**，更新 MuJoCo、PlanSys2 的版本动态。以下日期采用官方发布说明或作者公告，不采用论坛最后回复日期；新增收录不等于首次开源。已核查公开说明，尚未安装或复现，历史资源未全量复核。
 
@@ -35,8 +51,7 @@
 | [ros2_pulse 0.7.0](https://github.com/TanayK07/ros2_pulse) | 10 月 21 日发布 | 查看每个发布者和订阅者的计数，通过 /diagnostics 接入机器人诊断工具。 | [官方 Release](https://github.com/TanayK07/ros2_pulse/releases/tag/v0.7.0) |
 | [robot-data-diff](https://github.com/yafetashenafi790-lgtm/robot-data-diff) | 10 月 19 日作者介绍 | 比较 LeRobot 数据集两个版本的 episode、统计与 schema 变化，输出 HTML 报告。 | [作者公告](https://discourse.openrobotics.org/t/robot-data-diff-episode-aware-diffs-for-lerobot-datasets/58956) |
 
-<details>
-<summary>查看历史精选</summary>
+
 
 ### 历史精选 · 2026-10-12—10-15
 
@@ -86,7 +101,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 108 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 109 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -97,11 +112,11 @@
 
 | 目标 | 入口 | 适合查找 |
 | --- | --- | --- |
-| 学习机器人感知与定位 | [SLAM、感知与状态估计](#16-slam感知与状态估计) | 教材代码、视觉惯性定位、激光建图 |
-| 训练机器人操作策略 | [具身智能与 VLA](#11-具身智能与vla大模型) | 模型、训练与推理入口 |
-| 开发机械臂应用 | [机械臂、抓取与操作](#13-机械臂抓取与操作) | 驱动、运动规划、抓取与操作基准 |
-| 研究运动控制 | [人形与足式机器人](#12-人形与足式机器人) | 强化学习、全身控制和硬件资料 |
-| 构建仿真与采集流程 | [仿真、数据集与遥操作](#17-仿真数据集与遥操作) | 仿真器、数据采集与遥操作 |
+| 学习机器人感知与定位 | [SLAM、感知与状态估计](#slam) | 教材代码、视觉惯性定位、激光建图 |
+| 训练机器人操作策略 | [具身智能与 VLA](#vla) | 模型、训练与推理入口 |
+| 开发机械臂应用 | [机械臂、抓取与操作](#manipulation) | 驱动、运动规划、抓取与操作基准 |
+| 研究运动控制 | [人形与足式机器人](#legged) | 强化学习、全身控制和硬件资料 |
+| 构建仿真与采集流程 | [仿真、数据集与遥操作](#simulation) | 仿真器、数据采集与遥操作 |
 
 [↑ 返回顶部](#top)
 
@@ -113,10 +128,12 @@
 
 | 模型与机器人平台 | 感知、仿真与工具 |
 | :--- | :--- |
-| [🧩 具身智能与 VLA](#11-具身智能与vla大模型) | [🚗 自动驾驶](#15-自动驾驶) |
-| [🦿 人形与足式机器人](#12-人形与足式机器人) | [📡 SLAM、感知与状态估计](#16-slam感知与状态估计) |
-| [🦾 机械臂、抓取与操作](#13-机械臂抓取与操作) | [🌐 仿真、数据集与遥操作](#17-仿真数据集与遥操作) |
-| [🚁 无人机与空中机器人](#14-无人机与空中机器人) | [🛠️ SDK、工具与创客资源](#18-sdk工具diy创客与资源) |
+| [🧩 具身智能与 VLA](#vla) | [🚗 自动驾驶](#driving) |
+| [🦿 人形与足式机器人](#legged) | [📡 SLAM、感知与状态估计](#slam) |
+| [🦾 机械臂、抓取与操作](#manipulation) | [🌐 仿真、数据集与遥操作](#simulation) |
+| [🚁 无人机与空中机器人](#aerial) | [🛠️ SDK、工具与创客资源](#tools) |
+
+<a id="vla"></a>
 
 ### 1.1 具身智能与VLA大模型
 
@@ -141,6 +158,8 @@
 | **OpenVLA** | OpenVLA 团队 | [GitHub](https://github.com/openvla/openvla) | 面向机器人操作的视觉-语言-动作模型，提供模型权重入口、推理与微调代码；基础模型及数据的许可需分别查看。 |
 | **OpenPI** | Physical Intelligence | [GitHub](https://github.com/Physical-Intelligence/openpi) | π₀、π₀-FAST 与 π₀.₅ 等机器人模型的代码和检查点入口，包含推理及自有数据微调示例；实际适配效果依赖机器人与任务。 |
 
+<a id="legged"></a>
+
 ### 1.2 人形与足式机器人
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
@@ -159,6 +178,8 @@
 | **Humanoid-Gym** | 多校联合 (RoboterAX等) | [GitHub](https://github.com/roboterax/humanoid-gym) | 基于Isaac Gym的人形机器人强化学习训练框架，支持零样本迁移至真实机器人。 |
 | **Dreamwaq轮足机器人强化学习库** | yusongmin1 (哈尔滨工程大学) | [GitHub](https://github.com/yusongmin1/Dreamwaq) | 面向轮足机器人的强化学习框架，复现DreamWaQ系列的CVAE隐式地形估计算法并支持视觉-本体感知融合，基于Isaac Gym训练、MuJoCo Sim2Sim验证，已在山猫M20轮足机器人实机部署，另含Go2倒立/后腿站立任务。（原始方法见KAIST的[DreamWaQ](https://arxiv.org/abs/2301.10602)，ICRA 2023；其改进版[DreamWaQ++](https://dreamwaqpp.github.io/)发表于T-RO 2026，暂未开源。） |
 | **Microduck** | Pollen Robotics | [GitHub](https://github.com/pollen-robotics/microduck) | 小型双足机器鸭的软件仓库，包含运动控制、感知与系统服务；强化学习训练代码通过 README 中的 microduck_rl 入口提供。 |
+
+<a id="manipulation"></a>
 
 ### 1.3 机械臂、抓取与操作
 
@@ -179,6 +200,8 @@
 | **Intrinsic OMTS** | Intrinsic | [GitHub](https://github.com/intrinsic-ai/intrinsic-omts) | 2026-09-22 宣布开源的机床上下料参考应用，集成行为树、抓取、物体位姿估计与数字孪生；可以修改工作站布局和任务流程。代码为 Apache-2.0，FoundationPose 权重另受 NVIDIA 模型许可约束。 |
 | **hold_and_weld** | Berkan Tali（silanus23） | [GitHub](https://github.com/silanus23/hold_and_weld) | ROS 2 双臂夹持与焊接框架，结合 CAD 抓取采样、焊缝提取与 MoveIt 2；可在 RViz2 调整工作站布局。2026-10-06 公告 v0.3.0，目前仅完成仿真验证，面向 Ubuntu 24.04 / ROS 2 Jazzy。 |
 
+<a id="aerial"></a>
+
 ### 1.4 无人机与空中机器人
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
@@ -191,6 +214,8 @@
 | **大疆Tello无人机SDK** | 大疆创新 (DJI) | [GitHub](https://github.com/dji-sdk/Tello-Python) | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。 |
 | **GCOPTER** | 浙江大学 FAST 实验室 | [GitHub](https://github.com/ZJU-FAST-Lab/GCOPTER) | 多旋翼飞行器轨迹优化框架，用于生成满足动力学约束的轨迹。 |
 
+<a id="driving"></a>
+
 ### 1.5 自动驾驶
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
@@ -199,6 +224,8 @@
 | **UniAD** | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/UniAD) | CVPR 2023最佳论文，面向规划的统一自动驾驶框架，整合感知、预测和规划。 |
 | **BEVFormer** | 上海AI实验室/南京大学 | [GitHub](https://github.com/fundamentalvision/BEVFormer) | ECCV 2022，基于纯相机的BEV感知框架，用于3D目标检测和语义地图分割。 |
 | **DiffusionDrive端到端自动驾驶** | 华中科技大学 & 地平线 (hustvl) | [GitHub](https://github.com/hustvl/DiffusionDrive) | 面向实时端到端自动驾驶的截断扩散策略模型，NAVSIM基准达88.1 PDMS且以45 FPS实时运行，CVPR 2025 Highlight。 |
+
+<a id="slam"></a>
 
 ### 1.6 SLAM、感知与状态估计
 
@@ -217,6 +244,8 @@
 | **InternNav** | 上海人工智能实验室（InternRobotics） | [GitHub](https://github.com/InternRobotics/InternNav) | 具身导航工具箱，基于 PyTorch、Habitat 与 Isaac Sim，提供视觉语言导航模型、训练和评测入口。 |
 | **Nav2** | ROS Navigation 社区 | [GitHub](https://github.com/ros-navigation/navigation2) | ROS 2 移动机器人导航框架，提供路径规划、控制、代价地图和行为树等组件，可与定位及建图系统集成。 |
 
+<a id="simulation"></a>
+
 ### 1.7 仿真、数据集与遥操作
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
@@ -229,15 +258,17 @@
 | **Open-TeleVision** | 多校联合 | [GitHub](https://github.com/OpenTeleVision/TeleVision) | 基于VR头显的沉浸式机器人遥操作系统，操作者通过第一视角实时控制机器人双臂完成灵巧操作。 |
 | **宇树科技XR遥操作** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/xr_teleoperate) | 基于XR设备（Apple Vision Pro/Quest等）的H1/G1人形机器人遥操作系统，支持多种灵巧手。 |
 | **OpenWBT人形全身遥操作** | 银河通用 & 清华大学 | [GitHub](https://github.com/GalaxyGeneralRobotics/OpenWBT) | 基于Apple Vision Pro的宇树G1/H1人形机器人全身遥操作系统，支持行走、下蹲、弯腰、抓取的真机与仿真控制。 |
-| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 多关节与接触动力学仿真器，提供 C/C++、Python 接口；2026-10-22 发布 [3.17.0](https://github.com/google-deepmind/mujoco/releases/tag/3.17.0)，新增线程池 batch API，用于同一模型的多组仿真，升级前查看版本说明。 |
+| **MuJoCo** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco) | 多关节与接触动力学仿真器，提供 C/C++、Python 接口；2026-11-11 发布 [4.0.1](https://github.com/google-deepmind/mujoco/releases/tag/4.0.1)，修复 4.0.0 稀疏 Cholesky 分解问题，并为 Windows 提供 Studio Web Viewer。跨大版本升级请查看迁移说明。 |
 | **MuJoCo Menagerie** | Google DeepMind | [GitHub](https://github.com/google-deepmind/mujoco_menagerie) | 面向 MuJoCo 的机器人模型集合，提供多种机器人 MJCF 模型与资源；各模型的来源及许可见相应目录。 |
 | **Isaac Lab** | NVIDIA / Isaac Sim 社区 | [GitHub](https://github.com/isaac-sim/IsaacLab) | 基于 NVIDIA Isaac Sim 的机器人学习框架，支持强化学习、模仿学习与并行仿真；安装需满足其硬件及平台要求。 |
 | **Webots** | Cyberbotics | [GitHub](https://github.com/cyberbotics/webots) | 通用机器人仿真软件，包含机器人、传感器与场景示例，适合教学、算法验证和无硬件原型开发。 |
 | **LIBERO** | Bo Liu、Yifeng Zhu 等 | [GitHub](https://github.com/Lifelong-Robot-Learning/LIBERO) | 面向多任务与终身机器人学习的操作基准，提供任务套件、遥操作演示数据入口和训练评估代码。 |
 | **Isaac ROS** | NVIDIA | [文档](https://nvidia-isaac-ros.github.io/) \| [GitHub](https://github.com/NVIDIA-ISAAC-ROS) | GPU 加速的 ROS 2 机器人软件包生态，可尝试视觉 SLAM、三维重建、感知与遥操作。5.0 于 2026-09-21 发布，新增 AI 编程助手技能并迁移至 ROS 2 Lyrical；属于已有项目的新版本。 |
-
+| **LeLab** | Hugging Face | [GitHub](https://github.com/huggingface/leLab) | LeRobot 官方浏览器界面，整合机械臂校准、遥操作、数据采集、训练、策略运行和回放；可在本机浏览数据集，Apache-2.0。 |
 | **robot-data-diff** | yafetashenafi790-lgtm | [GitHub](https://github.com/yafetashenafi790-lgtm/robot-data-diff) | LeRobot 数据集版本比较 CLI，支持 v2.1 / v3.0、本地目录或 Hugging Face 仓库，报告 episode 增删改、统计及 schema 差异并生成 HTML；CPU 运行，不下载视频，Apache-2.0。 |
 | **ros2_pulse** | TanayK07 | [GitHub](https://github.com/TanayK07/ros2_pulse) | 基于 tracetools 钩子的 ROS 2 话题频率与节点监测工具；0.7.0 增加每端点计数及 /diagnostics 输出，支持接入诊断聚合器；安装版本与发行版适配见官方说明。 |
+<a id="tools"></a>
+
 ### 1.8 SDK、工具、DIY创客与资源
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
