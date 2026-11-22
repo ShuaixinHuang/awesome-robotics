@@ -2,6 +2,9 @@
 
 ## 2026-11-22
 
+- 根据 [Kitware 发布说明](https://www.kitware.com/lidarview-5-3-now-connected-to-ros2/) 收录 LidarView，资源增至 170，机器人方向 114。核查了文档，未运行 ROS 2 数据流或 MCAP 回放。
+- 复查 X-Bot 原仓库返回 404，标注历史入口的访问状态。
+
 - 为清单检查增加跨文档链接与锚点校验，并识别资源说明栏中的官方来源链接。
 
 - 新增 Gazebo Sim 与 ros_gz，资源总数 169，机器人方向 113。补齐 Nav2 Jazzy 入门链接和中英文移动导航入口。
