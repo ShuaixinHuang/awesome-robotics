@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**169 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**170 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🚀 快速开始](#quick-start) · [🧭 资源导航](#navigation) · [🆕 本期精选](#weekly) · [参与贡献](CONTRIBUTING.md) · [English quick guide](docs/start-here-en.md)
 
@@ -34,7 +34,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 113 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 114 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -68,6 +68,7 @@
 | :--- | :--- | :--- |
 | Gazebo Sim | 新增仿真器条目，提供 ROS 2 与 Gazebo 版本配对入口 | [Gazebo 安装指南](https://gazebosim.org/docs/latest/ros_installation/) |
 | ros_gz | 新增 ROS 2 与 Gazebo 的桥接和仿真启动工具 | [官方仓库](https://github.com/gazebosim/ros_gz) |
+| LidarView 5.3 | 新增 ROS 2 点云实时查看和 MCAP 回放入口 | [Kitware 发布说明](https://www.kitware.com/lidarview-5-3-now-connected-to-ros2/) |
 | Nav2 | 为已有条目补充 Jazzy 入门页及 [无硬件实践路线](docs/learning-paths.md#ros2-navigation) | [Nav2 Jazzy 入门](https://docs.nav2.org/jazzy/getting_started/index.html) |
 
 本期核查了上游仓库与官方文档。仿真路线尚未在本项目中运行。
@@ -265,6 +266,7 @@
 | **宇树科技4D LiDAR SLAM** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/point_lio_unilidar) | 基于Point-LIO算法适配宇树L1 4D LiDAR的SLAM方案，仅使用点云与内置IMU。 |
 | **Point-LIO** | 香港大学 MARS 实验室 | [GitHub](https://github.com/hku-mars/Point-LIO) | 高带宽激光惯性里程计，面向快速运动下的状态估计与建图。 |
 | **InternNav** | 上海人工智能实验室（InternRobotics） | [GitHub](https://github.com/InternRobotics/InternNav) | 具身导航工具箱，基于 PyTorch、Habitat 与 Isaac Sim，提供视觉语言导航模型、训练和评测入口。 |
+| **LidarView** | Kitware | [源代码](https://gitlab.kitware.com/LidarView/lidarview) | 基于 ParaView 的激光雷达数据可视化工具。5.3 增加 ROS 2 实时点云接入和 MCAP 读取，可查看点云、图像以及里程计或 IMU 等数据。[发布说明](https://www.kitware.com/lidarview-5-3-now-connected-to-ros2/)。 |
 | **Nav2** | ROS Navigation 社区 | [GitHub](https://github.com/ros-navigation/navigation2) | ROS 2 移动机器人导航框架，提供路径规划、控制、代价地图和行为树等组件，可与定位及建图系统集成。可从 [Jazzy 仿真入门](https://docs.nav2.org/jazzy/getting_started/index.html) 开始。 |
 
 <a id="simulation"></a>
@@ -306,7 +308,7 @@
 | **宇树科技机器人控制教程** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/unitree_guide) | 宇树科技四足机器人控制的开源教程项目，适合入门学习与参考。 |
 | **超迷你机械臂机器人项目** | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/Dummy-Robot) | 视频介绍：[【自制】我造了一台 钢 铁 侠 的 机 械 臂 ！【硬核】](https://www.bilibili.com/video/BV12341117rG) |
 | **MiniRover火星车** | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/MiniRover-Hardware) | 自制火星车的开源资料。 |
-| **X-Bot智能机械臂写字机器人** | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/X-Bot) | 基于CoreXY结构的机械臂。 |
+| **X-Bot智能机械臂写字机器人** | 稚晖君 (peng-zhihui) | [原仓库（404）](https://github.com/peng-zhihui/X-Bot) | 基于 CoreXY 结构的写字机器人。2026-11-22 核查时原仓库未公开可访问，暂未找到作者的替代入口。 |
 | **ONE-Robot独轮机器人** | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/ONE-Robot) | 基于IMU和STM32的独轮自平衡机器人。 |
 | **ElectronBot迷你桌面机器人** | 稚晖君 (peng-zhihui) | [项目主页](https://github.com/peng-zhihui/ElectronBot) | 非常小巧的桌面机器人。 |
 | **解魔方机器人** | 动力老男孩 | [项目主页](http://www.diy-robots.com/?page_id=46) | 基于乐高的解魔方机器人。 |
