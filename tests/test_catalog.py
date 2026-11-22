@@ -1,6 +1,8 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
-from scripts.check_catalog import ROOT, check_catalog
+from scripts.check_catalog import ROOT, check_catalog, check_documentation_links
 
 
 class CatalogTests(unittest.TestCase):
@@ -43,6 +45,36 @@ class CatalogTests(unittest.TestCase):
             self.text.replace(row, row[:-1] + " extra | column |")
         )
         self.assertTrue(any("four resource columns" in error for error in errors))
+
+
+    def test_real_documentation_links_pass(self):
+        self.assertEqual(check_documentation_links(ROOT), [])
+
+    def test_relative_markdown_targets_and_anchors_are_checked(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            (root / "docs").mkdir()
+            (root / "README.md").write_text(
+                '<a id="start"></a>\n[Guide](docs/guide.md#missing)\n'
+                '[Missing](docs/missing.md)\n[External](https://example.com/page.md)\n',
+                encoding="utf-8",
+            )
+            (root / "docs/guide.md").write_text(
+                '[Home](../README.md#start)\n', encoding="utf-8"
+            )
+            self.assertEqual(
+                check_documentation_links(root),
+                [
+                    "README.md:2: missing explicit anchor in docs/guide.md#missing",
+                    "README.md:3: missing Markdown target docs/missing.md",
+                ],
+            )
+
+    def test_official_source_can_appear_in_description(self):
+        row = "| **Fixture** | Example | 见说明 | [Source](https://example.com) |"
+        text = self.text.replace("| **LeLab**", row + "\n| **LeLab**", 1)
+        _, errors = check_catalog(text)
+        self.assertFalse(any("expected a project or source link" in error for error in errors))
 
 
 if __name__ == "__main__":
