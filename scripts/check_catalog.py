@@ -4,6 +4,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = ("robots", "embedded", "arch-os", "ml")
@@ -47,7 +48,7 @@ def check_catalog(text):
         if name in names:
             errors.append(f"Line {number}: duplicate resource name {cells[0]}")
         names.add(name)
-        if not re.search(r"\]\(https?://[^\s)]+\)", cells[2] or cells[3]):
+        if not re.search(r"\]\(https?://[^\s)]+\)", " ".join(cells[2:])):
             errors.append(f"Line {number}: expected a project or source link")
     summary = re.search(r"\*\*(\d+) 个资源条目\*\*", text)
     if summary is None or int(summary[1]) != sum(counts.values()):
@@ -63,9 +64,36 @@ def check_catalog(text):
     return counts, errors
 
 
+def check_documentation_links(root):
+    """Check relative Markdown links using the catalog's explicit anchors."""
+    documents = {
+        path: path.read_text(encoding="utf-8")
+        for path in [*root.glob("*.md"), *(root / "docs").rglob("*.md")]
+    }
+    anchors = {
+        path: set(re.findall(r'<a id="([^"]+)"></a>', text))
+        for path, text in documents.items()
+    }
+    errors = []
+    for source, text in documents.items():
+        for number, line in enumerate(text.splitlines(), 1):
+            for link in re.findall(r"\]\(([^\s)]+)\)", line):
+                if not re.fullmatch(r"(?!//)[^:#?]+\.md(?:#[^\s]*)?", link):
+                    continue
+                target = urlsplit(link)
+                destination = (source.parent / unquote(target.path)).resolve()
+                location = f"{source.relative_to(root)}:{number}"
+                if destination not in documents:
+                    errors.append(f"{location}: missing Markdown target {link}")
+                elif target.fragment and unquote(target.fragment) not in anchors[destination]:
+                    errors.append(f"{location}: missing explicit anchor in {link}")
+    return errors
+
+
 def main():
     text = (ROOT / "README.md").read_text(encoding="utf-8")
     counts, errors = check_catalog(text)
+    errors.extend(check_documentation_links(ROOT))
     print(
         json.dumps(
             {"total": sum(counts.values()), "sections": counts, "errors": errors},
