@@ -11,3 +11,9 @@ python scripts/check_catalog.py
 ```
 
 该检查离线运行，不将请求失败或限流误报成资源失效。新工具、模型或硬件如果没有实际运行，请准确说明所核查的官方资料。
+
+## 提交推荐或纠错
+
+可以先 [提交 Issue](https://github.com/ShuaixinHuang/awesome-robotics/issues/new/choose)，也可以直接开 PR。提交前搜索现有条目与 PR。用一句话说明读者能用该资源做什么。有版本或许可信息时附官方地址，并说明核查的是文档、运行示例还是真机结果。
+
+如果是在已有 PR 上继续修改，先同步上游 `main`，再按当前清单重新计算数量。可以用 `python -m unittest discover -s tests -v` 运行检查脚本的测试。

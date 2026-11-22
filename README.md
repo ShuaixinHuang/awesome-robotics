@@ -14,11 +14,46 @@
 
 **165 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
-[🧭 浏览目录](#navigation) &nbsp; · &nbsp; [🚀 快速开始](#quick-start) &nbsp; · &nbsp; [🆕 本周精选](#weekly) &nbsp; · &nbsp; [🤝 参与贡献](#credits)
+[🚀 快速开始](#quick-start) · [🧭 资源导航](#navigation) · [🆕 本期精选](#weekly) · [参与贡献](CONTRIBUTING.md) · [English quick guide](docs/start-here-en.md)
 
-<sub>本轮内容更新：2026-11-14 · 保留经典项目，补充可核实的新资源 · 排序不代表排名</sub>
+[![Catalog checks](https://github.com/ShuaixinHuang/awesome-robotics/actions/workflows/catalog.yml/badge.svg?branch=main)](https://github.com/ShuaixinHuang/awesome-robotics/actions/workflows/catalog.yml)
 
 </div>
+
+---
+
+### 维护记录
+
+仓库维护者 [ShuaixinHuang](https://github.com/ShuaixinHuang) 于 [2026-11-14](https://github.com/ShuaixinHuang/awesome-robotics/commit/27f478c576bcaa6328fe71e3798d28c7da2e5110) 新增 LeLab，更新实践路线并加入清单检查。此前于 [2026-10-23](https://github.com/ShuaixinHuang/awesome-robotics/commit/60c2161) 更新机器人资源，并合并了社区提交的 [SO-ARM 102（PR #1）](https://github.com/ShuaixinHuang/awesome-robotics/pull/1)。
+
+[更新日志](CHANGELOG.md) · [提交历史](https://github.com/ShuaixinHuang/awesome-robotics/commits/main/) · [报告失效链接或推荐资源](https://github.com/ShuaixinHuang/awesome-robotics/issues/new/choose)
+
+<a id="navigation"></a>
+
+## 🧭 资源导航
+
+| 方向 | 内容概览 | 条目数 |
+| :--- | :--- | ---: |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 109 |
+| [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
+| [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
+| [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
+
+<a id="quick-start"></a>
+
+## 🚀 按目标快速开始
+
+可以先在仿真中加载一个机器人模型，再用示例数据学习回放或训练。仿真、采集、VLA 和 ROS 2 的具体步骤见 [机器人实践路线](docs/learning-paths.md)。
+
+| 目标 | 入口 | 适合查找 |
+| --- | --- | --- |
+| 学习机器人感知与定位 | [SLAM、感知与状态估计](#slam) | 教材代码、视觉惯性定位、激光建图 |
+| 训练机器人操作策略 | [具身智能与 VLA](#vla) | 模型、训练与推理入口 |
+| 开发机械臂应用 | [机械臂、抓取与操作](#manipulation) | 驱动、运动规划、抓取与操作基准 |
+| 研究运动控制 | [人形与足式机器人](#legged) | 强化学习、全身控制和硬件资料 |
+| 构建仿真与采集流程 | [仿真、数据集与遥操作](#simulation) | 仿真器、数据采集与遥操作 |
+
+[↑ 返回顶部](#top)
 
 ---
 
@@ -94,31 +129,6 @@
 
 
 </details>
-
-<a id="navigation"></a>
-
-## 🧭 资源导航
-
-| 方向 | 内容概览 | 条目数 |
-| :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 109 |
-| [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
-| [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
-| [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
-
-<a id="quick-start"></a>
-
-## 🚀 按目标快速开始
-
-| 目标 | 入口 | 适合查找 |
-| --- | --- | --- |
-| 学习机器人感知与定位 | [SLAM、感知与状态估计](#slam) | 教材代码、视觉惯性定位、激光建图 |
-| 训练机器人操作策略 | [具身智能与 VLA](#vla) | 模型、训练与推理入口 |
-| 开发机械臂应用 | [机械臂、抓取与操作](#manipulation) | 驱动、运动规划、抓取与操作基准 |
-| 研究运动控制 | [人形与足式机器人](#legged) | 强化学习、全身控制和硬件资料 |
-| 构建仿真与采集流程 | [仿真、数据集与遥操作](#simulation) | 仿真器、数据采集与遥操作 |
-
-[↑ 返回顶部](#top)
 
 ---
 
@@ -393,7 +403,7 @@
 <details>
 <summary><strong>📌 收录与使用说明</strong></summary>
 
-收录不等于代码、权重、数据和硬件均采用同一开源许可。使用前请查看对应仓库的 LICENSE、模型卡和授权说明。历史条目尚未逐项重新核实，本轮核查范围见 [本周精选](#weekly)。
+收录不等于代码、权重、数据和硬件均采用同一开源许可。使用前请查看对应仓库的 LICENSE、模型卡和授权说明。历史条目尚未逐项重新核实，本轮核查范围见 [本期精选](#weekly)。
 
 </details>
 
@@ -408,6 +418,6 @@
 
 **发现好项目，一起完善这份清单。**
 
-[参与贡献](#credits) · [本周精选](#weekly) · [返回顶部 ↑](#top)
+[参与贡献](#credits) · [本期精选](#weekly) · [返回顶部 ↑](#top)
 
 </div>
