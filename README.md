@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**167 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**169 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🚀 快速开始](#quick-start) · [🧭 资源导航](#navigation) · [🆕 本期精选](#weekly) · [参与贡献](CONTRIBUTING.md) · [English quick guide](docs/start-here-en.md)
 
@@ -34,7 +34,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 111 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 113 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -51,6 +51,7 @@
 | 训练机器人操作策略 | [具身智能与 VLA](#vla) | 模型、训练与推理入口 |
 | 开发机械臂应用 | [机械臂、抓取与操作](#manipulation) | 驱动、运动规划、抓取与操作基准 |
 | 研究运动控制 | [人形与足式机器人](#legged) | 强化学习、全身控制和硬件资料 |
+| 无硬件学习 ROS 2 移动导航 | [Gazebo、Nav2 实践路线](docs/learning-paths.md#ros2-navigation) | 仿真、定位、路径规划和目标点导航 |
 | 构建仿真与采集流程 | [仿真、数据集与遥操作](#simulation) | 仿真器、数据采集与遥操作 |
 
 [↑ 返回顶部](#top)
@@ -59,7 +60,22 @@
 
 <a id="weekly"></a>
 
-## 🆕 本期精选 · 2026-11-14
+## 🆕 本期精选 · 2026-11-22
+
+本期补齐 ROS 2 移动导航的仿真入口。可以先用 Gazebo 启动示例机器人，再在 RViz 中初始化位姿并发送导航目标。
+
+| 项目 | 本期更新 | 官方来源 |
+| :--- | :--- | :--- |
+| Gazebo Sim | 新增仿真器条目，提供 ROS 2 与 Gazebo 版本配对入口 | [Gazebo 安装指南](https://gazebosim.org/docs/latest/ros_installation/) |
+| ros_gz | 新增 ROS 2 与 Gazebo 的桥接和仿真启动工具 | [官方仓库](https://github.com/gazebosim/ros_gz) |
+| Nav2 | 为已有条目补充 Jazzy 入门页及 [无硬件实践路线](docs/learning-paths.md#ros2-navigation) | [Nav2 Jazzy 入门](https://docs.nav2.org/jazzy/getting_started/index.html) |
+
+本期核查了上游仓库与官方文档。仿真路线尚未在本项目中运行。
+
+<details>
+<summary>查看历史精选</summary>
+
+### 历史精选 · 2026-11-14
 
 本期新增 **LeLab**，更新已收录的 **MuJoCo、LeRobot、OpenPI**。11 月 14 日是本期核查日期；新增收录不等于项目首次开源。
 
@@ -71,9 +87,6 @@
 | [OpenPI](https://github.com/Physical-Intelligence/openpi) | 补充实践路线 | 使用 π₀、π₀-FAST、π₀.₅ 检查点尝试推理，再按自有数据适配微调。 | [官方 README](https://github.com/Physical-Intelligence/openpi#readme) |
 
 新增 [实践路线](docs/learning-paths.md)，按“先仿真、再采集、再训练”选择入口。以上依据官方仓库与发布说明核查，未进行模型训练或真机部署。
-
-<details>
-<summary>查看历史精选</summary>
 
 ### 历史精选 · 2026-10-19—10-23
 
@@ -252,7 +265,7 @@
 | **宇树科技4D LiDAR SLAM** | 宇树科技 (Unitree) | [GitHub](https://github.com/unitreerobotics/point_lio_unilidar) | 基于Point-LIO算法适配宇树L1 4D LiDAR的SLAM方案，仅使用点云与内置IMU。 |
 | **Point-LIO** | 香港大学 MARS 实验室 | [GitHub](https://github.com/hku-mars/Point-LIO) | 高带宽激光惯性里程计，面向快速运动下的状态估计与建图。 |
 | **InternNav** | 上海人工智能实验室（InternRobotics） | [GitHub](https://github.com/InternRobotics/InternNav) | 具身导航工具箱，基于 PyTorch、Habitat 与 Isaac Sim，提供视觉语言导航模型、训练和评测入口。 |
-| **Nav2** | ROS Navigation 社区 | [GitHub](https://github.com/ros-navigation/navigation2) | ROS 2 移动机器人导航框架，提供路径规划、控制、代价地图和行为树等组件，可与定位及建图系统集成。 |
+| **Nav2** | ROS Navigation 社区 | [GitHub](https://github.com/ros-navigation/navigation2) | ROS 2 移动机器人导航框架，提供路径规划、控制、代价地图和行为树等组件，可与定位及建图系统集成。可从 [Jazzy 仿真入门](https://docs.nav2.org/jazzy/getting_started/index.html) 开始。 |
 
 <a id="simulation"></a>
 
@@ -260,6 +273,8 @@
 
 | 项目名称 | 发起人/作者 | 项目地址 | 项目介绍 |
 | :--- | :--- | :---: | :--- |
+| **Gazebo Sim** | Open Robotics / Gazebo 社区 | [GitHub](https://github.com/gazebosim/gz-sim) | 机器人仿真器，提供物理、传感器和场景建模，可用于仿真移动机器人。ROS 2 版本搭配见[安装指南](https://gazebosim.org/docs/latest/ros_installation/)；Apache-2.0。 |
+| **ros_gz** | Open Robotics / Gazebo 社区 | [GitHub](https://github.com/gazebosim/ros_gz) | ROS 与 Gazebo 的集成工具，包含消息桥接、仿真启动与模型生成等软件包；Apache-2.0。 |
 | **Genesis** | Genesis-Embodied-AI | [GitHub](https://github.com/Genesis-Embodied-AI/genesis-world) | 面向机器人与具身智能学习的物理仿真平台，提供 Python 接口和多种物理求解器。 |
 | **AgiBot-World** | OpenDriveLab (上海AI实验室) | [GitHub](https://github.com/OpenDriveLab/AgiBot-World) | IROS 2025最佳论文候选，面向可扩展和智能具身系统的大规模操控平台。 |
 | **EmbodiedGen生成式3D世界引擎** | 地平线机器人 (Horizon Robotics) | [GitHub](https://github.com/HorizonRobotics/EmbodiedGen) | 面向具身智能的生成式3D世界引擎，将文本、图像编译为物理合理、可直接仿真的3D资产与场景，支持Isaac/MuJoCo/SAPIEN/Genesis等。 |
@@ -380,7 +395,7 @@
 | **DeepVision** | 稚晖君 (peng-zhihui) | [GitHub](https://github.com/peng-zhihui/DeepVision) | 本项目实现了移动端CV算法快速验证框架，旨在提供一套通用的CV算法验证框架。框架经过本人一年多的开发和维护，目前已经完成绝大部分API的开发，实现包括实时视频流模块、单帧图像处理模块、3D场景模块、云端推理模块等众多功能。 |
 | **MMDetection** | 商汤科技 | [GitHub](https://github.com/open-mmlab/mmdetection) | 商汤的目标检测工具箱及基准测试 |
 | **ChatGLM** | 智谱AI | [GitHub](https://github.com/THUDM/ChatGLM-6B) | 开源双语对话语言模型，支持中英文对话。 |
-| **Qwen** | 阿里云 | [GitHub](https://github.com/QwenLM/Qwen) | 阿里云通义千问大语言模型系列。 |
+| **Qwen（初代）** | 阿里云 | [GitHub](https://github.com/QwenLM/Qwen) | 通义千问初代模型的历史入口。官方 README 标明该仓库已停止积极维护，并指向后续的 [Qwen2](https://github.com/QwenLM/Qwen2) 仓库。 |
 | **Baichuan** | 百川智能 | [GitHub](https://github.com/baichuan-inc/Baichuan2) | 百川智能开源大语言模型。 |
 | **InternLM** | 上海AI实验室 | [GitHub](https://github.com/InternLM/InternLM) | 上海AI实验室开源的大语言模型。 |
 | **Qwen2-VL** | 阿里云 | [GitHub](https://github.com/QwenLM/Qwen2-VL) | 阿里云通义千问多模态视觉-语言模型，广泛应用于VLA模型开发。 |

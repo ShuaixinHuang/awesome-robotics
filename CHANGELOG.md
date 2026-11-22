@@ -2,6 +2,10 @@
 
 ## 2026-11-22
 
+- 新增 Gazebo Sim 与 ros_gz，资源总数 169，机器人方向 113。补齐 Nav2 Jazzy 入门链接和中英文移动导航入口。
+- 根据上游 README 标注初代 Qwen 的维护状态，保留历史入口。
+- 核查范围覆盖上述官方仓库、文档和许可元数据。未运行 Nav2 仿真。
+
 - 收录社区投稿 [R4R（PR #3）](https://github.com/ShuaixinHuang/awesome-robotics/pull/3)，记录有限仿真频率下的控制参数修正与实验入口。
 - 收录社区投稿 [Robot Skill Hub（PR #2）](https://github.com/ShuaixinHuang/awesome-robotics/pull/2)，作为机器人源码与环境准备配方索引。
 - 将资源导航和实践入口移到精选之前，在首页链接历次维护提交、社区贡献和清单检查。
