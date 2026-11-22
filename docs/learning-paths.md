@@ -9,6 +9,14 @@
 | 已有数据研究 VLA | [OpenPI](https://github.com/Physical-Intelligence/openpi#readme) | 先运行官方推理示例，再检查数据格式、动作空间和模型配置，按官方示例微调 | 自有样本能通过数据转换与推理；评估与训练数据分离 |
 | ROS 2 机械臂应用 | [MoveIt 2 教程](https://moveit.picknik.ai/main/index.html) | 先在示例机器人中规划，再接入自己的 URDF、关节限制和控制器 | 仿真中完成碰撞检查、规划与执行 |
 
+<a id="ros2-navigation"></a>
+
+## 无硬件练习 ROS 2 移动导航
+
+1. 按 [Gazebo 安装指南](https://gazebosim.org/docs/latest/ros_installation/) 选择匹配的 ROS 2 和 Gazebo 版本。以下路线采用 ROS 2 Jazzy 与 Gazebo Harmonic。
+2. 按 [Nav2 Jazzy 入门](https://docs.nav2.org/jazzy/getting_started/index.html) 启动 TurtleBot 仿真与 RViz。按教程设置初始位姿，再选一个可达的导航目标。
+3. 在 RViz 观察规划路径和代价地图，并确认机器人到达目标。若地图、里程计或传感器数据缺失，先核对仿真是否运行，以及 [ros_gz](https://github.com/gazebosim/ros_gz) 桥接配置是否包含所需话题。
+
 ## 选择前确认
 
 - **数据与硬件：** 确认关节顺序、单位、频率、相机标定和动作空间。训练与部署配置应保持一致。
