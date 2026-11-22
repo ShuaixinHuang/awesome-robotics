@@ -2,6 +2,8 @@
 
 ## 2026-11-22
 
+- 合并社区投稿 [Elastra（PR #10）](https://github.com/ShuaixinHuang/awesome-robotics/pull/10)，补充 MuJoCo 弹性表面仿真实验入口。总数 172，机器人方向 116。已核查源码入口与论文，未运行仿真。
+
 - 根据 [11 月 20 日作者公告](https://discourse.openrobotics.org/t/mobile-ros-an-open-source-ros-2-app-for-your-phone/60045) 和上游仓库收录 Mobile ROS，资源增至 171，机器人方向 115。本轮核查了公开说明与许可证，未安装应用或运行仿真。
 
 - 根据 [Kitware 发布说明](https://www.kitware.com/lidarview-5-3-now-connected-to-ros2/) 收录 LidarView，资源增至 170，机器人方向 114。核查了文档，未运行 ROS 2 数据流或 MCAP 回放。
