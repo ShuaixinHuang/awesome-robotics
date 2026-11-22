@@ -1,5 +1,20 @@
 # awesome-robotics 更新记录
 
+## 2026-11-22
+
+- 收录社区投稿 [R4R（PR #3）](https://github.com/ShuaixinHuang/awesome-robotics/pull/3)，记录有限仿真频率下的控制参数修正与实验入口。
+- 收录社区投稿 [Robot Skill Hub（PR #2）](https://github.com/ShuaixinHuang/awesome-robotics/pull/2)，作为机器人源码与环境准备配方索引。
+- 将资源导航和实践入口移到精选之前，在首页链接历次维护提交、社区贡献和清单检查。
+- 增加英文快速指南，以及资源推荐和条目纠错模板。本次更新覆盖文档与贡献流程。
+
+## 2026-11-14
+
+- 根据官方仓库新增 LeLab，资源总数 165，机器人方向 109；LeRobot 与 OpenPI 已有条目，更新实践入口，不重复收录。
+- 根据 MuJoCo 官方 Release 更新至 4.0.1（11 月 11 日发布），保留旧版本精选作为历史记录。
+- 新增仿真、采集、VLA 与 ROS 2 实践路线、贡献说明和离线清单检查。
+- 为八个机器人分类添加稳定导航锚点，修复 robot-data-diff / ros2_pulse 与表头之间的空行。
+- 核查范围为本期官方 README、许可证元数据和发布说明；未运行模型训练或真机部署。
+
 ## 2026-10-23
 
 - 新增 robot-data-diff 与 ros2_pulse，总数 164，机器人方向 108。
