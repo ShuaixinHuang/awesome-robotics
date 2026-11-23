@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**172 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**173 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🚀 快速开始](#quick-start) · [🧭 资源导航](#navigation) · [🆕 本期精选](#weekly) · [参与贡献](CONTRIBUTING.md) · [English quick guide](docs/start-here-en.md)
 
@@ -34,7 +34,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 116 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 117 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -234,6 +234,7 @@
 | **Prometheus自主无人机系统** | 阿木实验室 (amov-lab) | [GitHub](https://github.com/amov-lab/Prometheus) | 面向自主无人机的开源软件系统，支持目标检测、SLAM导航、编队控制等。 |
 | **EGO-Planner** | 浙江大学FAST实验室 | [GitHub](https://github.com/ZJU-FAST-Lab/ego-planner) | 高效的无人机梯度引导在线局部规划器。 |
 | **XTDrone无人机仿真平台** | robin-shaun | [GitHub](https://github.com/robin-shaun/XTDrone) | 基于PX4、ROS和Gazebo的无人机仿真平台，支持集群仿真。 |
+| **OpenDroneLab** | palcode | [GitHub](https://github.com/palcode/opendronelab) | 基于 PX4 SITL、ROS 2 Jazzy 和 Gazebo Harmonic 的纯仿真环境，可用仿真真值评估视觉惯性里程计和状态估计，并提供 [MCAP 示例与回放布局](https://github.com/palcode/opendronelab/releases/tag/v0.1.0)。 |
 | **浙江大学FAST实验室无人机项目** | 浙江大学FAST实验室 | [GitHub](https://github.com/ZJU-FAST-Lab/Fast-Drone-250) | 250mm自主无人机的硬件和软件设计。 |
 | **香港科技大学空中机器人项目** | 香港科技大学 | [GitHub](https://github.com/HKUST-Aerial-Robotics/FIESTA) | 空中机器人在线运动规划的快速增量欧几里得距离场。 |
 | **大疆Tello无人机SDK** | 大疆创新 (DJI) | [GitHub](https://github.com/dji-sdk/Tello-Python) | 大疆Tello系列无人机的Python SDK，支持编程控制和图像处理。 |
