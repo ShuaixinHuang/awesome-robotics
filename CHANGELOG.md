@@ -2,7 +2,9 @@
 
 ## 2026-11-23
 
-- 收录 [OpenDroneLab v0.1.0](https://github.com/palcode/opendronelab/releases/tag/v0.1.0)，补充 PX4 软件在环仿真、状态估计评估和 MCAP 回放入口。总数 173，机器人方向 117。核查了作者公告和发布页，未运行仿真或回放。
+- 收录 [rqt_execution_flow](https://github.com/nivednivu1997/rqt_execution_flow)，提供 ROS 2 Jazzy 动作与服务调用的可视化调试入口。总数 174，机器人方向 118。核查了作者公告和许可证，未安装插件或运行示例。
+
+- 收录 [OpenDroneLab v0.1.0](https://github.com/palcode/opendronelab/releases/tag/v0.1.0)，补充 PX4 软件在环仿真、状态估计评估和 MCAP 回放入口。该次收录后总数为 173，机器人方向为 117。核查了作者公告和发布页，未运行仿真或回放。
 
 ## 2026-11-22
 
