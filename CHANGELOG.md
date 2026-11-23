@@ -1,5 +1,9 @@
 # awesome-robotics 更新记录
 
+## 2026-11-23
+
+- 收录 [OpenDroneLab v0.1.0](https://github.com/palcode/opendronelab/releases/tag/v0.1.0)，补充 PX4 软件在环仿真、状态估计评估和 MCAP 回放入口。总数 173，机器人方向 117。核查了作者公告和发布页，未运行仿真或回放。
+
 ## 2026-11-22
 
 - 合并社区投稿 [Elastra（PR #10）](https://github.com/ShuaixinHuang/awesome-robotics/pull/10)，补充 MuJoCo 弹性表面仿真实验入口。总数 172，机器人方向 116。已核查源码入口与论文，未运行仿真。
