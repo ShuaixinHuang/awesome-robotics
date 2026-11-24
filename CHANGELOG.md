@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- 收录 [robot_stream](https://github.com/robot-stream/robot_stream)，补充 ROS 2 机器人视频与遥测入口。总数 177，机器人方向 121。核查了作者公告、仓库与许可，未运行参考应用或连接真机。
+
 - 收录 [pnc-diag-mcp](https://github.com/VictorLiu0725/pnc-diag-mcp)，提供离线 ROS bag 与 MCAP 时序检查入口。总数 176，机器人方向 120。核查了作者公告与源码入口，未运行工具。
 
 ## 2026-11-23
