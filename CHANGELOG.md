@@ -1,5 +1,9 @@
 # awesome-robotics 更新记录
 
+## 2026-11-24
+
+- 收录 [pnc-diag-mcp](https://github.com/VictorLiu0725/pnc-diag-mcp)，提供离线 ROS bag 与 MCAP 时序检查入口。总数 176，机器人方向 120。核查了作者公告与源码入口，未运行工具。
+
 ## 2026-11-23
 
 - 收录 [BTick](https://sheriffathey.github.io/btick_docs/)，提供 ROS 2 行为树监控和 BehaviorTree.CPP v4 XML 编辑入口。总数 175，机器人方向 119。已核查作者公告、文档与许可证，未运行应用。
