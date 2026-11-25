@@ -1,5 +1,9 @@
 # awesome-robotics 更新记录
 
+## 2026-11-25
+
+- 收录 [PlotJuggler](https://github.com/PlotJuggler/PlotJuggler)，补充机器人时序数据与遥测调试入口。总数 178，机器人方向 122。核查了 4.2.0 发布说明和仓库许可证，未运行应用。
+
 ## 2026-11-24
 
 - 收录 [robot_stream](https://github.com/robot-stream/robot_stream)，补充 ROS 2 机器人视频与遥测入口。总数 177，机器人方向 121。核查了作者公告、仓库与许可，未运行参考应用或连接真机。
