@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**177 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**178 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🚀 快速开始](#quick-start) · [🧭 资源导航](#navigation) · [🆕 本期精选](#weekly) · [参与贡献](CONTRIBUTING.md) · [English quick guide](docs/start-here-en.md)
 
@@ -34,7 +34,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 121 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 122 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -333,6 +333,7 @@
 | **robot_stream** | robot-stream | [GitHub](https://github.com/robot-stream/robot_stream) | ROS 2 Humble 网关与 Flutter/Dart 软件包，提供 WebRTC/WHEP 视频、遥测及 Nav2 导航界面。包含参考应用，BSD-3-Clause。 |
 | **rqt_execution_flow** | nivednivu1997 | [GitHub](https://github.com/nivednivu1997/rqt_execution_flow) | ROS 2 Jazzy 的 rqt 插件，以调用树查看动作目标与服务调用的状态，支持记录和回放。服务调用可视化需要启用 service introspection；Apache-2.0。 |
 | **pnc-diag-mcp** | VictorLiu0725 | [GitHub](https://github.com/VictorLiu0725/pnc-diag-mcp) | 只读的离线 ROS bag 检查工具，可检查 MCAP、DB3 和 ROS 1 bag 的话题频率与时间间隔。提供 Python CLI 和 MCP 接口，无需安装 ROS 2；Apache-2.0。 |
+| **PlotJuggler** | PlotJuggler 社区 | [GitHub](https://github.com/PlotJuggler/PlotJuggler) | 机器人时序数据可视化工具，可比较遥测曲线和派生序列。[4.2.0](https://github.com/PlotJuggler/PlotJuggler/releases/tag/4.2.0) 新增内置日志面板与状态切换视图；主仓库采用 MPL-2.0。 |
 | **BTick** | Sherif Fathey | [应用](https://github.com/SherifFathey/btick_app) \| [ROS 2 集成](https://github.com/SherifFathey/btick) | ROS 2 行为树调试工具，可查看树及子树的运行状态，并可视化编辑 BehaviorTree.CPP v4 XML。[文档](https://sheriffathey.github.io/btick_docs/)；Apache-2.0。 |
 
 [↑ 返回顶部](#top)
