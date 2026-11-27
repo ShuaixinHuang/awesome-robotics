@@ -1,5 +1,9 @@
 # awesome-robotics 更新记录
 
+## 2026-11-27
+
+- 收录 [ros-mobile-bridge](https://github.com/AuriLabsTech/ros-mobile-bridge) 开源协议适配库。总数 179，机器人方向 123。核查了作者公告和许可证，未运行样例。
+
 ## 2026-11-25
 
 - 收录 [PlotJuggler](https://github.com/PlotJuggler/PlotJuggler)，补充机器人时序数据与遥测调试入口。总数 178，机器人方向 122。核查了 4.2.0 发布说明和仓库许可证，未运行应用。
