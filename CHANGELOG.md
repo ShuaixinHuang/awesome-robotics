@@ -2,6 +2,8 @@
 
 ## 2026-11-27
 
+- 收录 [DWARL](https://github.com/nobleo/dwarl)，补充差速移动机器人在 Nav2 中使用强化学习局部控制器的实验入口。总数 180，机器人方向 124。核查了[作者公告](https://discourse.openrobotics.org/t/60319)、官方文档和许可证，未运行仿真或真机测试。
+
 - 收录 [ros-mobile-bridge](https://github.com/AuriLabsTech/ros-mobile-bridge) 开源协议适配库。总数 179，机器人方向 123。核查了作者公告和许可证，未运行样例。
 
 ## 2026-11-25

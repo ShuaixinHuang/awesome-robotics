@@ -12,7 +12,7 @@
 
 连接代码、硬件、模型与学习资料。
 
-**179 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
+**180 个资源条目** &nbsp; · &nbsp; **4 大方向** &nbsp; · &nbsp; **8 个机器人专题**
 
 [🚀 快速开始](#quick-start) · [🧭 资源导航](#navigation) · [🆕 本期精选](#weekly) · [参与贡献](CONTRIBUTING.md) · [English quick guide](docs/start-here-en.md)
 
@@ -34,7 +34,7 @@
 
 | 方向 | 内容概览 | 条目数 |
 | :--- | :--- | ---: |
-| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 123 |
+| [🤖 机器人项目](#robots) | 具身智能、运动控制、机械臂、无人机、自动驾驶与仿真 | 124 |
 | [🔌 嵌入式系统](#embedded) | 开发板、边缘视觉、智能硬件与 DIY 电子项目 | 13 |
 | [⚙️ 架构与操作系统](#arch-os) | RISC-V、实时操作系统与机器人运行时 | 5 |
 | [🧠 机器学习](#ml) | 视觉语言模型、推理引擎、视觉与语音工具 | 38 |
@@ -270,6 +270,7 @@
 | **InternNav** | 上海人工智能实验室（InternRobotics） | [GitHub](https://github.com/InternRobotics/InternNav) | 具身导航工具箱，基于 PyTorch、Habitat 与 Isaac Sim，提供视觉语言导航模型、训练和评测入口。 |
 | **LidarView** | Kitware | [源代码](https://gitlab.kitware.com/LidarView/lidarview) | 基于 ParaView 的激光雷达数据可视化工具。5.3 增加 ROS 2 实时点云接入和 MCAP 读取，可查看点云、图像以及里程计或 IMU 等数据。[发布说明](https://www.kitware.com/lidarview-5-3-now-connected-to-ros2/)。 |
 | **Nav2** | ROS Navigation 社区 | [GitHub](https://github.com/ros-navigation/navigation2) | ROS 2 移动机器人导航框架，提供路径规划、控制、代价地图和行为树等组件，可与定位及建图系统集成。可从 [Jazzy 仿真入门](https://docs.nav2.org/jazzy/getting_started/index.html) 开始。 |
+| **DWARL** | Nobleo Technology | [GitHub](https://github.com/nobleo/dwarl) | 面向差速移动机器人的实验性 Nav2 局部控制器。在 MuJoCo 中训练策略，可在 MuJoCo 或 Gazebo 中评估，再以 ONNX 部署。需自行训练，无预训练导航策略。Apache-2.0。详见[官方文档](https://nobleo.github.io/dwarl/)。 |
 
 <a id="simulation"></a>
 
